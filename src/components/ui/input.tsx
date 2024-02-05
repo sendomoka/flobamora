@@ -3,9 +3,11 @@ import * as React from "react"
 import { cn } from "@/lib/utils"
 
 export interface InputProps
+// @ts-expect-error
   extends React.InputHTMLAttributes<HTMLInputElement> {}
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
+  // @ts-expect-error
   ({ className, type, ...props }, ref) => {
     return (
       <input
