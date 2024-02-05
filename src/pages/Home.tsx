@@ -5,8 +5,8 @@ const Home = () => {
 
     return (
         <div class="flex flex-col w-full h-screen">
-            <div class="pt-20 inline mx-auto">
-                <h1 class="text-4xl font-bold">{t("Explore the enchanting islands of NTT")}</h1>
+            <div class="pt-60 inline ml-10 sm:ml-10 md:ml-10 lg:ml-20">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-8xl text-balance font-extrabold capitalize sm:leading-tight md:leading-snug lg:leading-tight tracking-wide">{t("Explore the enchanting islands of NTT")}</h1>
             </div>
         </div>
     )

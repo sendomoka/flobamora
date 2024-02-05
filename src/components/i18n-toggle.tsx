@@ -11,7 +11,6 @@ import unitedKingdomFlag from "/gb.svg"
 
 export function I18nToggle() {
   const { i18n } = useTranslation()
-
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>
@@ -23,14 +22,12 @@ export function I18nToggle() {
           )}
         </Button>
       </DropdownMenuTrigger>
-
       <DropdownMenuContent>
         <DropdownMenuItem 
           onClick={() => i18n.changeLanguage('id')}
         >
           Indonesia
         </DropdownMenuItem>
-
         <DropdownMenuItem
           onClick={() => i18n.changeLanguage('en')}  
         >
