@@ -1,9 +1,12 @@
 {
-    "translation": {
-        "EN": "ID",
-        "Explore the enchanting islands of NTT": "Jelajahi pesona pulau-pulau NTT",
-        "Things To Do": "Yang Lagi Viral",
-        "Practical Tips": "Sefruit Tips",
-        "Search": "Cari"
-    }
+  "translation": {
+    "EN": "ID",
+    "Explore the enchanting islands of NTT": "Jelajahi pesona pulau-pulau NTT",
+    "Things To Do": "Yang Lagi Viral",
+    "Practical Tips": "Sefruit Tips",
+    "Search": "Cari",
+    "Home": "Halaman Utama",
+    "About": "Tentang",
+    "Destination": "Destinasi"
+  }
 }
