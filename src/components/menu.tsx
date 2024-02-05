@@ -33,7 +33,7 @@ export function MenuSheet() {
         <div>
         <div onClick={() => setOpen(true)} class="flex justify-center">
           <Button variant="outline">
-            <div class="flex mr-10">
+            <div class="flex mr-20">
             <MagnifyingGlassIcon
               // @ts-expect-error
               className="size-5" />
