@@ -1,4 +1,5 @@
 import HomeAbout from "@/components/Home/HomeAbout";
+import HomeHero from "@/components/Home/HomeHero";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 
@@ -26,6 +27,7 @@ const Home = () => {
           </Button>
         </div>
       </div>
+      <HomeHero />
       <div
         className={
           "dark:bg-black bg-white text-black dark:text-white px-10 py-5 md:p-16 xl:px-80 xl:py-32"
