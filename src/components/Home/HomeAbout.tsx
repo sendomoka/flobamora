@@ -1,5 +1,3 @@
-import { Button } from "../ui/button";
-
 export default function HomeAbout() {
   return (
     <div className={"flex flex-col justify-center md:flex-row-reverse gap-10"}>

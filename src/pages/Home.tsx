@@ -22,7 +22,7 @@ const Home = () => {
           bersatu harmonis.
         </div>
         <div className="flex justify-center mt-2 ml-10 md:ml-0">
-          <Button size={"lg"} variant={"secondary"}>
+          <Button size={"lg"}>
             <span className={"text-xl"}>{t("Explore")}</span>{" "}
           </Button>
         </div>
