@@ -1,69 +1,11 @@
-import AliceCarousel from "react-alice-carousel";
-import "react-alice-carousel/lib/alice-carousel.css";
-
-const handleDragStart = (e: any) => e.preventDefault();
-
-const items = [
-  <div
-    className={
-      "w-[352px] bg-cover bg-no-repeat h-[600px] flex items-end rounded-3xl mr-48"
-    }
-    style={{
-      backgroundImage: "url('/images/dana-englich-.webp')",
-      backgroundPositionX: "75%",
-    }}
-    onDragStart={handleDragStart}
-    role={"presentation"}>
-    <h3 className={"text-6xl p-6 font-bold"}>PULAU KOMODO</h3>
-  </div>,
-  <div
-    className={
-      "w-[352px] bg-cover bg-no-repeat h-[600px] flex items-end rounded-3xl"
-    }
-    style={{
-      backgroundImage: "url('/images/pexels-jennifer-polanco-3925081.jpg')",
-      backgroundPositionX: "center",
-    }}
-    onDragStart={handleDragStart}
-    role={"presentation"}>
-    <h3 className={"text-6xl p-6 font-bold"}>PANTAI PINK</h3>
-  </div>,
-  <div
-    className={
-      "w-[352px] bg-cover bg-no-repeat h-[600px] flex items-end rounded-3xl"
-    }
-    style={{
-      backgroundImage: "url('/images/1672033802-dji-0222-jpg.jpg')",
-      backgroundPositionX: "center",
-    }}
-    onDragStart={handleDragStart}
-    role={"presentation"}>
-    <h3 className={"text-6xl p-6 font-bold"}>DANAU KELIMUTU</h3>
-  </div>,
-  <div
-    className={
-      "w-[352px] bg-cover bg-no-repeat h-[600px] flex items-end rounded-3xl"
-    }
-    style={{
-      backgroundImage:
-        "url('/images/wendy-stevian-Sunset-at-Padar-island.webp')",
-      backgroundPositionX: "center",
-    }}
-    onDragStart={handleDragStart}
-    role={"presentation"}>
-    <h3 className={"text-6xl p-6 font-bold"}>PULAU PADAR</h3>
-  </div>,
-];
-
-const responsive = {
-  0: { items: 1 },
-  568: { items: 2 },
-  1024: { items: 3 },
-};
+import Flicking from "@egjs/preact-flicking";
+import "@egjs/preact-flicking/dist/flicking.css";
+// Or, if you have to support IE9
+import "@egjs/preact-flicking/dist/flicking-inline.css";
 
 export default function ExploreMore() {
   return (
-    <div className={"flex flex-col px-10 md:px-72 py-10 gap-10"}>
+    <div className={"flex flex-col px-10 xl:px-72 py-10 gap-10"}>
       <div className={"flex flex-col md:flex-row gap-3"}>
         <div className={"md:w-3/4"}>
           <hr className={"border-green-main border-2 w-[320px]"} />
@@ -81,12 +23,58 @@ export default function ExploreMore() {
         </p>
       </div>
       <div className={"text-white"}>
-        <AliceCarousel
-          paddingRight={10}
-          mouseTracking={true}
-          items={items}
-          responsive={responsive}
-        />
+        <Flicking
+          align={"prev"}
+          onMoveEnd={(e) => {
+            console.log(e);
+          }}>
+          <div
+            className={
+              "w-[300px] bg-cover bg-no-repeat h-[600px] flex items-end rounded-3xl mr-6"
+            }
+            style={{
+              backgroundImage: "url('/images/dana-englich-.webp')",
+              backgroundPositionX: "75%",
+            }}
+            role={"presentation"}>
+            <h3 className={"text-5xl p-6 font-bold"}>PULAU KOMODO</h3>
+          </div>
+          <div
+            className={
+              "w-[300px] bg-cover bg-no-repeat h-[600px] flex items-end rounded-3xl mr-6"
+            }
+            style={{
+              backgroundImage:
+                "url('/images/pexels-jennifer-polanco-3925081.jpg')",
+              backgroundPositionX: "center",
+            }}
+            role={"presentation"}>
+            <h3 className={"text-5xl p-6 font-bold"}>PANTAI PINK</h3>
+          </div>
+          <div
+            className={
+              "w-[300px] bg-cover bg-no-repeat h-[600px] flex items-end rounded-3xl mr-6"
+            }
+            style={{
+              backgroundImage: "url('/images/1672033802-dji-0222-jpg.jpg')",
+              backgroundPositionX: "center",
+            }}
+            role={"presentation"}>
+            <h3 className={"text-5xl p-6 font-bold"}>DANAU KELIMUTU</h3>
+          </div>
+          <div
+            className={
+              "w-[300px] bg-cover bg-no-repeat h-[600px] flex items-end rounded-3xl mr-6"
+            }
+            style={{
+              backgroundImage:
+                "url('/images/wendy-stevian-Sunset-at-Padar-island.webp')",
+              backgroundPositionX: "center",
+            }}
+            role={"presentation"}>
+            <h3 className={"text-5xl p-6 font-bold"}>PULAU PADAR</h3>
+          </div>
+        </Flicking>
       </div>
     </div>
   );

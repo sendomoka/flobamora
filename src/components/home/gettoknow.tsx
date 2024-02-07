@@ -24,7 +24,7 @@ export default function GetToKnow() {
             </h2>
             <span className={"font-semibold"}>Explore all articles →</span>
           </div>
-          <div className={"md:w-1/3"}>
+          <div className={"hidden md:block md:w-1/3"}>
             Here are a few things to help you get acquainted with this unique
             province in Indonesia, East Nusa Tenggara (NTT).
           </div>
