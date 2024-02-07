@@ -1,7 +1,7 @@
-export default function HomeAbout() {
+export function About() {
   return (
-    <div className={"flex flex-col justify-center md:flex-row-reverse gap-10"}>
-      <div>
+    <div className={"h-screen mt-72 sm:mt-20 mx-auto flex flex-col justify-center items-center md:flex-row-reverse gap-10"}>
+      <div className="px-6 sm:px-0 sm:w-5/6 md:w-1/2">
         <span className={"font-semibold text-2xl"}>Informasi Lebih Lanjut</span>
         <h2 className={"font-extrabold text-4xl md:text-6xl mb-3"}>
           Tentang Flobamora
@@ -26,7 +26,7 @@ export default function HomeAbout() {
           </button>
         </div>
       </div>
-      <img src="/svgs/about-komodo.svg" className={"max-w-[400px]"} alt="" />
+      <img src="/svgs/about-komodo.svg" className={"w-5/6 sm:max-w-[400px]"} alt="" />
     </div>
   );
 }

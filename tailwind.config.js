@@ -9,9 +9,6 @@ module.exports = {
   ],
   prefix: "",
   theme: {
-    backgroundImage: {
-      "hero-1": "url('images/iqx-azmi-.jpg')",
-    },
     container: {
       center: true,
       padding: "2rem",

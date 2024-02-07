@@ -17,7 +17,7 @@ export function MenuSheet() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="outline" size="icon">
+        <Button variant="outline" size="icon" className="bg-white/25 dark:bg-black/25 hover:bg-white/50 dark:hover:bg-black/50">
           <HamburgerMenuIcon
             // @ts-expect-error
             className="size-5" />

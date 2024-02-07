@@ -6,15 +6,15 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import indonesiaFlag from "/id.svg"
-import unitedKingdomFlag from "/gb.svg"
+import indonesiaFlag from "/svgs/id.svg"
+import unitedKingdomFlag from "/svgs/gb.svg"
 
 export function I18nToggle() {
   const { i18n } = useTranslation()
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>
-        <Button variant="outline">
+        <Button variant="outline" className="bg-white/25 dark:bg-black/25 hover:bg-white/50 dark:hover:bg-black/50">
           {i18n.language === 'id' ? (
             <img src={indonesiaFlag} width="20" />
           ) : (
@@ -22,7 +22,7 @@ export function I18nToggle() {
           )}
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent>
+      <DropdownMenuContent className="translate-y-3 bg-white/25 dark:bg-black/25 hover:bg-white/50 dark:hover:bg-black/50">
         <DropdownMenuItem 
           onClick={() => i18n.changeLanguage('id')}
         >
