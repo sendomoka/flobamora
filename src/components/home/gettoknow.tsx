@@ -1,7 +1,7 @@
 export default function GetToKnow() {
   return (
     <div
-      className={"absolute w-full h-screen left-0 bg-cover bg-center"}
+      className={"w-full h-screen left-0 bg-cover bg-center"}
       style={{
         backgroundImage:
           "url('/images/wendy-stevian-Sunset-at-Padar-island.webp')",
@@ -15,7 +15,7 @@ export default function GetToKnow() {
             "sm:px-0 md:w-full xl:w-3/4 flex flex-col md:flex-row md:mx-auto md:justify-between text-[#FAFAFA]"
           }>
           <div className={"flex flex-col justify-center "}>
-            <hr className={"border-white border w-[320px]"} />
+            <hr className={"border-white border-2 w-[320px]"} />
             <h2
               className={
                 "font-extrabold text-2xl sm:text-4xl md:text-6xl md:mb-4"
