@@ -2,7 +2,7 @@ export function About() {
   return (
     <div
       className={
-        "h-screen mx-auto flex flex-col justify-center items-center md:flex-row-reverse gap-10"
+        "h-screen mx-auto flex flex-col justify-center items-center md:flex-row-reverse gap-10 my-36 md:my-10"
       }>
       <div className="px-6 sm:px-0 sm:w-5/6 md:w-1/2">
         <span className={"font-semibold text-2xl"}>Informasi Lebih Lanjut</span>
