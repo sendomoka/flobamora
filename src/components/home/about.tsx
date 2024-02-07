@@ -1,6 +1,9 @@
 export function About() {
   return (
-    <div className={"h-screen mt-72 sm:mt-20 mx-auto flex flex-col justify-center items-center md:flex-row-reverse gap-10"}>
+    <div
+      className={
+        "h-screen mx-auto flex flex-col justify-center items-center md:flex-row-reverse gap-10"
+      }>
       <div className="px-6 sm:px-0 sm:w-5/6 md:w-1/2">
         <span className={"font-semibold text-2xl"}>Informasi Lebih Lanjut</span>
         <h2 className={"font-extrabold text-4xl md:text-6xl mb-3"}>
@@ -21,12 +24,19 @@ export function About() {
           tiada duanya.
         </p>
         <div class={"mt-8"}>
-          <button className={"bg-[#166534] text-white px-3 py-1 rounded-md"}>
+          <button
+            className={
+              "bg-[#166534] hover:bg-[#19472b] text-white px-3 py-1 rounded-md"
+            }>
             Jelajahi Lebih Lanjut Tentang Flobamora
           </button>
         </div>
       </div>
-      <img src="/svgs/about-komodo.svg" className={"w-5/6 sm:max-w-[400px]"} alt="" />
+      <img
+        src="/svgs/about-komodo.svg"
+        className={"w-5/6 sm:max-w-[400px]"}
+        alt=""
+      />
     </div>
   );
 }
