@@ -5,9 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@fontsource/bungee':
-    specifier: ^5.0.18
-    version: 5.0.18
+  '@fontsource/dela-gothic-one':
+    specifier: ^5.0.17
+    version: 5.0.17
   '@radix-ui/react-dialog':
     specifier: ^1.0.5
     version: 1.0.5(react-dom@18.2.0)(react@18.2.0)
@@ -599,8 +599,8 @@ packages:
     resolution: {integrity: sha512-9TANp6GPoMtYzQdt54kfAyMmz1+osLlXdg2ENroU7zzrtflTLrrC/lgrIfaSe+Wu0b89GKccT7vxXA0MoAIO+Q==}
     dev: false
 
-  /@fontsource/bungee@5.0.18:
-    resolution: {integrity: sha512-E0uHG3r1kk4rDqkEG18eNyp9kDY05l6tCCSfWmELdgktHXUDk8HuhkSweEBuDS5j2Hy5iuHrMptcZGD0efi3ng==}
+  /@fontsource/dela-gothic-one@5.0.17:
+    resolution: {integrity: sha512-3sjJ0bqgYr6YwoYo5LgKBj2iHMcf6BNeOtwZdjJNB20Z39oHG+NRSiaxATtluy3a0wOGvnQq2rnYWxrLfBY25g==}
     dev: false
 
   /@isaacs/cliui@8.0.2:
