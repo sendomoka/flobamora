@@ -8,15 +8,15 @@ export default function ExploreMore() {
     <div className={"flex flex-col px-10 xl:px-72 py-10 gap-10"}>
       <div className={"flex flex-col md:flex-row gap-3"}>
         <div className={"md:w-3/4"}>
-          <hr className={"border-green-main border-2 w-[320px]"} />
+          <hr className={"border-green-main border-white border-2 w-[320px]"} />
           <h2
             className={
-              "font-extrabold text-green-main text-2xl sm:text-4xl md:text-6xl md:mb-4"
+              "font-extrabold text-green-main dark:text-white text-2xl sm:text-4xl md:text-6xl md:mb-4"
             }>
             EXPLORE MORE <br /> EAST NUSA TENGGARA
           </h2>
         </div>
-        <p className={"text-green-main md:w-3/4"}>
+        <p className={"text-green-main dark:text-white md:w-3/4"}>
           Not sure what to do on your next trip to East Nusa Tenggara? No
           worries. We have gathered a selection of curated destinations from
           different parts of the provience.
