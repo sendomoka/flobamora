@@ -1,5 +1,6 @@
 import { FadeColorDividerSection } from "@/components/fade-divider";
 import { About } from "@/components/home/about";
+import { CardPlace } from "@/components/home/card-place";
 import ExploreMore from "@/components/home/exploremore";
 import GetToKnow from "@/components/home/gettoknow";
 import { Hero } from "@/components/home/hero";
@@ -12,6 +13,7 @@ const Home = () => {
         <FadeColorDividerSection />
       </section>
       <section>
+        <CardPlace />
         <About />
       </section>
       <section>
