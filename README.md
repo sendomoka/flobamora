@@ -50,7 +50,7 @@ Flores, Sumba, Timor, and Alor (Flobamora) is a region in the eastern part of In
 - [x] Responsive
 - [x] Home - Hero
 - [x] Home - Infinite Moving Card Place
-- [ ] Home - Achievement
+- [x] Home - Achievement
 - [ ] Home - Featuring Article
 - [ ] Home - NTT Place Map
 - [ ] Home - Featuring Youtube/Tiktok Video
