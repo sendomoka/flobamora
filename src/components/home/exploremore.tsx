@@ -9,7 +9,7 @@ export default function ExploreMore() {
       <div className={"flex flex-col md:flex-row gap-3"}>
         <div className={"md:w-3/4"}>
           <hr
-            className={"border-green-main dark:border-white border-2 w-[320px]"}
+            className={"border-green-main dark:border-white border-2 max-w-96"}
           />
           <h2
             className={

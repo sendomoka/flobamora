@@ -19,6 +19,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "cmdk": "^0.2.1",
+    "flowbite-react": "^0.7.2",
     "framer-motion": "^11.0.3",
     "i18next": "^23.8.2",
     "i18next-browser-languagedetector": "^7.2.0",

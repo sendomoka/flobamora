@@ -5,10 +5,21 @@ import logolight from "/svgs/logo-light.svg";
 export default function Footer() {
   const { theme } = useTheme();
   return (
-    <div className={"container"}>
-      <div className={"grid md:grid-cols-4 md:grid-rows-none mb-10"}>
+    <div className={"container pt-14"}>
+      <div
+        className={
+          "grid md:grid-cols-4 md:grid-rows-none gap-3 md:gap-0 mb-10"
+        }>
         <div className={"flex flex-col items-start gap-5"}>
-          <a href="/" class="flex items-center mx-auto">
+          <a href="/" class="flex items-center mx-auto md:hidden">
+            <img
+              src={theme === "dark" ? logodark : logolight}
+              alt="logo"
+              width={50}
+            />
+            <h3 class="uppercase text-xl font-bold">flobamora</h3>
+          </a>
+          <a href="/" class="md:flex items-center mx-auto hidden">
             <img
               src={theme === "dark" ? logodark : logolight}
               alt="logo"
@@ -24,7 +35,7 @@ export default function Footer() {
             <div>WITA</div>
           </div>
         </div>
-        <div className={"p-4 flex flex-col gap-3"}>
+        <div className={"md:p-4 flex flex-col gap-3 text-center"}>
           <h4 className={"font-bold text-lg"}>Flobamora</h4>
           <div>
             <div>Home</div>
@@ -33,7 +44,7 @@ export default function Footer() {
             <div>Articles</div>
           </div>
         </div>
-        <div className={"p-4 flex flex-col gap-3"}>
+        <div className={"md:p-4 flex flex-col gap-3 text-center"}>
           <h4 className={"font-bold text-lg"}>Sumber Data</h4>
           <div>
             <div>Detik.com</div>
@@ -44,7 +55,7 @@ export default function Footer() {
             <div>gotravelaindonesia.com</div>
           </div>
         </div>
-        <div className={"p-4 flex flex-col gap-3"}>
+        <div className={"md:p-4 flex flex-col gap-3 text-center"}>
           <h4 className={"font-bold text-lg"}>Tentang Kita</h4>
           <div>
             <div>Jehian Athaya Tsani Az Zuhry</div>
