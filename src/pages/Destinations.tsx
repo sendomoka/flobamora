@@ -3,11 +3,11 @@ import { destinations } from "../data/destinations";
 export default function Destinations() {
   return (
     <div className="h-screen gap-4 py-24 text-black lg:py-28 dark:text-white">
-      <div className={"container flex flex-col gap-5"}>
+      <div className={"container flex flex-col gap-10"}>
         <section className={""}>
-          <hr className={"border-black border-2 mb-2"} />
+          <hr className={"border-black border-2 mb-2 max-w-[14.5rem]"} />
           <h1 className={"font-extrabold text-4xl"}>
-            EXPLORE ALL THE DESTINATIONS
+            EXPLORE ALL <br /> THE DESTINATIONS
           </h1>
         </section>
         <section className={"flex flex-col gap-8"}>
