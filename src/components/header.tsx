@@ -42,7 +42,9 @@ export default function Header() {
           </div>
           <div class="hidden lg:flex items-center space-x-2">
             <div onClick={() => setOpen(true)}>
-              <Button variant="outline" className="bg-white/25 dark:bg-black/25 hover:bg-white/50 dark:hover:bg-black/50">
+              <Button
+                variant="outline"
+                className="bg-white/25 dark:bg-black/25 hover:bg-white/50 dark:hover:bg-black/50">
                 <MagnifyingGlassIcon
                   // @ts-expect-error
                   className="size-5"
