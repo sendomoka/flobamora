@@ -1,6 +1,7 @@
 import { FadeColorDividerSection } from "@/components/fade-divider";
 import { About } from "@/components/home/about";
 import ExploreMore from "@/components/home/exploremore";
+import FindYourHeaven from "@/components/home/findurheaven";
 import GetToKnow from "@/components/home/gettoknow";
 import { Hero } from "@/components/home/hero";
 
@@ -19,6 +20,9 @@ const Home = () => {
       </section>
       <section>
         <ExploreMore />
+      </section>
+      <section>
+        <FindYourHeaven />
       </section>
     </div>
   );

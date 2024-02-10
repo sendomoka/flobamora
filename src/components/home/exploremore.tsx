@@ -5,7 +5,7 @@ import "@egjs/preact-flicking/dist/flicking-inline.css";
 
 export default function ExploreMore() {
   return (
-    <div className={"flex flex-col px-10 xl:px-72 py-10 gap-10"}>
+    <div className={"flex flex-col px-10 xl:px-72 py-20 gap-10"}>
       <div className={"flex flex-col md:flex-row gap-3"}>
         <div className={"md:w-3/4"}>
           <hr
