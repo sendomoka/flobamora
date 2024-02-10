@@ -32,7 +32,7 @@ export default function DestinationTemplate() {
       <div className={"container py-10"}>
         <div
           className={
-            "text-black-main text-center flex flex-col md:flex-row gap-5"
+            "text-black-main dark:text-white-main text-center flex flex-col md:flex-row gap-5"
           }>
           <div>
             <hr className={"max-w-96 border-black border-[1px]"} />
@@ -58,6 +58,7 @@ export default function DestinationTemplate() {
                 buffalos, Sumba deers, monkeys, wild horses and many snake
                 species are present on the island.
               </p>
+              <br />
               <p>
                 Komodo is composed of three different type of vegetation with
                 savanna all around the coastline covering 70 % of the island,
@@ -65,6 +66,7 @@ export default function DestinationTemplate() {
                 level and an altitude of 500 meters and the quasi-cloud forest
                 above 500 meters.
               </p>
+              <br />
               <p>
                 Mount Satalibo is the highest point of Komodo reaching 730
                 meters high. Two of the most famous spot of Komodo National Park
