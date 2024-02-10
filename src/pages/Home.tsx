@@ -7,7 +7,7 @@ import { Hero } from "@/components/home/hero";
 
 const Home = () => {
   return (
-    <div class="flex flex-col w-full h-screen text-black dark:text-white">
+    <div class="flex flex-col w-full text-black dark:text-white">
       <section>
         <Hero />
         <FadeColorDividerSection />
