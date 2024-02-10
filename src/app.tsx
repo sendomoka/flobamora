@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Header from "./components/header";
 import Destinations from "./pages/Destinations";
 import Footer from "./components/footer";
+import DestinationTemplate from "./pages/destination/template";
 
 export function App() {
   return (
@@ -13,6 +14,7 @@ export function App() {
         <Route path="/" Component={Home} />
         <Route path="/about" Component={About} />
         <Route path="/destinations" Component={Destinations} />
+        <Route path="/destinations/:slug" Component={DestinationTemplate} />
       </Routes>
       <Footer />
     </>

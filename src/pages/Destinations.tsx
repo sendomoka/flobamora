@@ -6,7 +6,7 @@ export default function Destinations() {
       <div className={"container flex flex-col gap-10"}>
         <section className={""}>
           <hr className={"border-black border-2 mb-2 max-w-[14.5rem]"} />
-          <h1 className={"font-extrabold text-4xl"}>
+          <h1 className={"font-extrabold md:text-4xl text-2xl"}>
             EXPLORE ALL <br /> THE DESTINATIONS
           </h1>
         </section>

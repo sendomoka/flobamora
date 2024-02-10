@@ -15,7 +15,7 @@ export default function GetToKnow() {
             "sm:px-0 md:w-full xl:w-3/4 flex flex-col md:flex-row md:mx-auto md:justify-between text-[#FAFAFA]"
           }>
           <div className={"flex flex-col justify-center "}>
-            <hr className={"border-white border-2 w-[320px]"} />
+            <hr className={"border-white border-2 max-w-[27rem]"} />
             <h2
               className={
                 "font-extrabold text-2xl sm:text-4xl md:text-6xl md:mb-4"
@@ -61,7 +61,7 @@ function ArticleCard({
       <img
         src={imgURL}
         height={"200px"}
-        className={"min-w-[320px] max-w-[320px] object-cover"}
+        className={"max-w-[320px] object-cover"}
         alt=""
       />
       <div
