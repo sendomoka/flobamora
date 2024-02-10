@@ -54,9 +54,10 @@ Flores, Sumba, Timor, and Alor (Flobamora) is a region in the eastern part of In
 - [ ] Home - Featuring Article
 - [ ] Home - NTT Place Map
 - [ ] Home - Featuring Youtube/Tiktok Video
+- [ ] Home - Travel Cost from Jakarta, Bali, Singapore, Australia (Subscription UI)
 - [ ] Footer - Social Media & FAQ
 - [ ] Footer - Analytics Time, Temperature, Visited Last Year
 - [ ] Header - Search Articles
+- [ ] Destionations (Nav)
 - [ ] Articles (Nav)
 - [ ] Accommodations (Nav)
-- [ ] Travel Costs (Nav)
