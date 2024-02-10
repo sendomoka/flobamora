@@ -2,7 +2,7 @@ import { destinations } from "../data/destinations";
 
 export default function Destinations() {
   return (
-    <div className="h-screen gap-4 py-24 text-black lg:py-28 dark:text-white">
+    <div className="gap-4 py-24 text-black lg:py-28 dark:text-white">
       <div className={"container flex flex-col gap-10"}>
         <section className={""}>
           <hr className={"border-black border-2 mb-2 max-w-[14.5rem]"} />
