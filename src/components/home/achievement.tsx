@@ -61,59 +61,26 @@ export function Achievement() {
     },
   };
   return (
-    <div className="flex flex-col h-screen md:flex-row md:justify-between md:items-end">
+    <div className="flex flex-col h-screen lg:flex-row lg:justify-between lg:items-end">
       <img
         src={komodo}
         alt="komodo"
-        className="sm:w-1/2 h-fit translate-y-[32rem] md:translate-y-0"
+        className="sm:w-1/2 h-fit translate-y-[32rem] lg:translate-y-0"
       />
-      <div className="p-6 -mt-44 sm:-mt-20 md:mt-40 md:w-1/2 md:m-auto">
+      <div className="p-6 -mt-44 sm:-mt-20 lg:mt-40 lg:w-1/2 lg:m-auto">
         <div className="inline-flex items-center justify-center">
           <h1
-            className="text-xl sm:text-6xl"
+            className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl"
             style={{
               fontFamily: "Dela Gothic One",
             }}>
             Achievement
           </h1>
-          <div className={"sm:hidden"}>
+          <div className=" absolute translate-x-[9.5rem] sm:translate-x-44 bs:translate-x-44 md:translate-x-56 xl:translate-x-[17rem] size-24 sm:size-36 xl:size-40">
             <Lottie
               options={defaultOptions}
-              height={40}
-              width={40}
               isStopped={false}
               isPaused={false}
-              style={{
-                transform: "scale(2.5)",
-                marginLeft: "0.5rem",
-              }}
-            />
-          </div>
-          <div className={"hidden md:hidden"}>
-            <Lottie
-              options={defaultOptions}
-              height={50}
-              width={50}
-              isStopped={false}
-              isPaused={false}
-              style={{
-                transform: "scale(2.5)",
-                marginLeft: "0.5rem",
-              }}
-            />
-          </div>
-          <div className={"hidden md:block"}>
-            <Lottie
-              options={defaultOptions}
-              height={60}
-              width={60}
-              isStopped={false}
-              isPaused={false}
-              style={{
-                transform: "scale(2.5)",
-                marginLeft: "1rem",
-                paddingTop: "2px",
-              }}
             />
           </div>
         </div>
@@ -123,7 +90,7 @@ export function Achievement() {
           province continues to earn accolades for its sustainability
           initiatives and wealth of natural attractions.
         </p>
-        <div className="mt-10 sm:ml-80 md:ml-40 sm:mt-20">
+        <div className="mt-10 sm:ml-80 md:ml-[22rem] lg:ml-20 sm:mt-20">
           <motion.div>
             {achievements.map((achievement, index) => (
               <motion.div

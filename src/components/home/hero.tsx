@@ -46,7 +46,7 @@ export function Hero() {
         className="z-50 flex flex-col items-center justify-center">
         <motion.p
           // @ts-expect-error
-          className="pt-10 pb-2 text-4xl text-center text-white capitalize sm:text-6xl md:text-8xl md:w-2/3"
+          className="pt-10 pb-2 text-4xl text-center text-white capitalize sm:text-6xl lg:text-7xl xl:text-8xl md:w-2/3"
           style={{
             fontFamily: "Dela Gothic One",
             textShadow: "5px 5px 0px rgba(0, 0, 0, 0.5)",
@@ -55,7 +55,7 @@ export function Hero() {
         </motion.p>
         <motion.p
           // @ts-expect-error
-          className="hidden w-11/12 pb-2 text-center text-white sm:flex md:w-1/2"
+          className="hidden w-11/12 pb-2 text-center text-white sm:flex lg:w-4/6 xl:w-1/2"
           style={{ textShadow: "2px 2px 0px rgba(0, 0, 0, 0.5)" }}>
           <span dangerouslySetInnerHTML={{ __html: formattedDescription }} />
         </motion.p>
