@@ -33,7 +33,7 @@ export default function Footer() {
   console.log(Intl.DateTimeFormat().resolvedOptions().timeZone);
   const { theme } = useTheme();
   return (
-    <div className={"container"}>
+    <div className={"container mt-10"}>
       <div
         className={
           "grid md:grid-cols-4 md:grid-rows-none mb-10 text-center md:text-left"

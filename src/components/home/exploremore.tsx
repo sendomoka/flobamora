@@ -7,7 +7,7 @@ export default function ExploreMore() {
   return (
     <div className={"flex flex-col px-10 xl:px-72 py-10 gap-10"}>
       <div className={"flex flex-col md:flex-row gap-3"}>
-        <div className={"md:w-3/4"}>
+        <div className={"md:w-3/5"}>
           <hr
             className={"border-green-main dark:border-white border-2 max-w-96"}
           />
@@ -17,8 +17,11 @@ export default function ExploreMore() {
             }>
             EXPLORE MORE <br /> EAST NUSA TENGGARA
           </h2>
+          <h5 className={"font-semibold"}>
+            <a href={"/destinations"}>Explore all destinations →</a>
+          </h5>
         </div>
-        <p className={"text-green-main dark:text-white md:w-3/4"}>
+        <p className={"text-green-main dark:text-white md:w-2/5"}>
           Not sure what to do on your next trip to East Nusa Tenggara? No
           worries. We have gathered a selection of curated destinations from
           different parts of the provience.

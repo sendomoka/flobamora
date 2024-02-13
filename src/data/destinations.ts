@@ -17,7 +17,7 @@ const destinations: destination[] = [
     name: "RIUNG 17 ISLAND",
     description:
       "This marine park presents a different side of Flores Island. When setting foot in this marine park area which has more than seventeen islands, visitors are invited to directly experience the silence and beauty of the 17 Riung Island Marine Park.",
-    imgURL: "images/riung-17-island-marine.jpg",
+    imgURL: "/images/riung-17-island-marine.jpg",
     slug: "riung-17-island",
   },
   {
