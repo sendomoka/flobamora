@@ -3,8 +3,7 @@ export default function GetToKnow() {
     <div
       className={"w-full h-screen left-0 bg-cover bg-center"}
       style={{
-        backgroundImage:
-          "url('/images/wendy-stevian-Sunset-at-Padar-island.webp')",
+        backgroundImage: "url('/images/Padar Island/Wendy Stevian.jpg')",
       }}>
       <div
         className={
@@ -30,12 +29,16 @@ export default function GetToKnow() {
           </div>
         </div>
         <ArticleCard
-          imgURL={"/images/humba-dreams.jpeg"}
+          imgURL={
+            "/images/Articles/5 MOVIES SET IN BEAUTIFUL EAST NUSA TENGGARA/dok. Miles Films _ Humba Dreams.jpeg"
+          }
           title="10 Movies Set in East Nusa Tenggara"
           description="Of course, this natural beauty has been used as a backdrop for several films. I don't know if the story is related, or the film helps promote the natural beauty of NTT. The latest are the films Aku Rindu and Nona Manis Sayange, here are 10 ..."
         />
         <ArticleCard
-          imgURL={"/images/pantai ntt.jpg"}
+          imgURL={
+            "/images/Articles/THE ENCHANTMENT OF KOKA BEACH_ STUNNING BEAUTY/@theouterislands.jpg"
+          }
           title="10 Best Beaches in East Nusa Tenggara"
           description="There is no need to doubt the beauty of the beaches in NTT. Below are recommendations for beautiful beaches in NTT that must be on your holiday list!"
         />

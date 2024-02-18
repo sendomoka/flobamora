@@ -6,7 +6,7 @@ export default function DestinationTemplate() {
           "h-screen w-full bg-cover bg-[60%_center] flex flex-col gap-3 justify-center items-center text-white-main px-4 text-center"
         }
         style={{
-          backgroundImage: `url('/images/abimanyu-photowork-.webp')`,
+          backgroundImage: `url('/images/Komodo Island/Abimanyu Photowork.jpg')`,
         }}>
         <h1
           className={
@@ -43,7 +43,7 @@ export default function DestinationTemplate() {
               ABOUT <br className={"hidden md:block"} /> KOMODO ISLAND
             </h2>
             <img
-              src="/images/komodo island square.png"
+              src="/images/Komodo Island/helloflores.com.jpg"
               alt=""
               className={" md:hidden mx-auto"}
             />
@@ -78,7 +78,7 @@ export default function DestinationTemplate() {
             </div>
           </div>
           <img
-            src="/images/komodo island square.png"
+            src="/images/Komodo Island/helloflores.com.jpg"
             alt=""
             className={"max-w-[448px] max-h-[400px] hidden md:block"}
           />
@@ -94,7 +94,7 @@ export default function DestinationTemplate() {
       <div
         className={"h-[80vh] w-fuil bg-cover bg-center"}
         style={{
-          backgroundImage: `url('/images/riung-17-island-marine.jpg')`,
+          backgroundImage: `url('/images/Komodo Island/Swandi Changra.jpg')`,
         }}>
         <div className={"container h-full flex justify-start items-end py-20"}>
           <h4

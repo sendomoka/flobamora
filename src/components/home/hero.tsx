@@ -5,9 +5,9 @@ import "@fontsource/dela-gothic-one";
 
 export function Hero() {
   const images = [
-    "/images/denissa-devy-Padar-islan.webp",
-    "/images/fajruddin-mudzakkir-Padar-islan.webp",
-    "/images/iqx-azmi-.webp",
+    "/images/Padar Island/Denissa Devy.jpg",
+    "/images/Padar Island/Fajruddin Mudzakkir.jpg",
+    "/images/Komodo Island/Iqx Azmi.jpg",
   ];
   const { t } = useTranslation();
   const title = t("Explore the enchanting islands of NTT");

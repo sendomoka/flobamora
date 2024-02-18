@@ -38,7 +38,7 @@ export default function ExploreMore() {
               "w-[300px] bg-cover bg-no-repeat h-[600px] flex items-end rounded-3xl mr-6"
             }
             style={{
-              backgroundImage: "url('/images/dana-englich-.webp')",
+              backgroundImage: "url('/images/Komodo Island/Dana Englich.jpg')",
               backgroundPositionX: "75%",
             }}
             role={"presentation"}>
@@ -49,8 +49,7 @@ export default function ExploreMore() {
               "w-[300px] bg-cover bg-no-repeat h-[600px] flex items-end rounded-3xl mr-6"
             }
             style={{
-              backgroundImage:
-                "url('/images/pexels-jennifer-polanco-3925081.jpg')",
+              backgroundImage: "url('/images/Pink Beach/Jennifer Polanco.jpg')",
               backgroundPositionX: "center",
             }}
             role={"presentation"}>
@@ -61,7 +60,8 @@ export default function ExploreMore() {
               "w-[300px] bg-cover bg-no-repeat h-[600px] flex items-end rounded-3xl mr-6"
             }
             style={{
-              backgroundImage: "url('/images/1672033802-dji-0222-jpg.jpg')",
+              backgroundImage:
+                "url('/images/Lakes of Mount Kelimutu/wonderful indonesia.jpg')",
               backgroundPositionX: "center",
             }}
             role={"presentation"}>
@@ -72,8 +72,7 @@ export default function ExploreMore() {
               "w-[300px] bg-cover bg-no-repeat h-[600px] flex items-end rounded-3xl mr-6"
             }
             style={{
-              backgroundImage:
-                "url('/images/wendy-stevian-Sunset-at-Padar-island.webp')",
+              backgroundImage: "url('/images/Padar Island/Wendy Stevian.jpg')",
               backgroundPositionX: "center",
             }}
             role={"presentation"}>
