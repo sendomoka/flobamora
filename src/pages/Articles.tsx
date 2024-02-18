@@ -1,3 +1,5 @@
+import { articles } from "@/data/articles";
+
 export default function Articles() {
   return (
     <div className={"flex flex-col gap-4"}>
@@ -38,7 +40,7 @@ export default function Articles() {
       </div>
       {/* Latest Articles */}
       <div className={"container"}>
-        <div className={"flex flex-col gap-5"}>
+        <div className={"flex flex-col gap-7"}>
           <hr className={"border-black max-w-80 border-[2px] mt-5 mb-2"} />
           <h2 className={"text-5xl font-bold"}>
             LATEST <br />
@@ -79,8 +81,47 @@ export default function Articles() {
               </button>
             </div>
           </div>
+          <div className={"grid md:grid-cols-3 grid-flow-row gap-7"}>
+            {articles.map((value) => {
+              if (value.slug !== "5-movies-set-in-beautiful-east-nusa-tenggara")
+                return (
+                  <Article
+                    title={value.title}
+                    datePublished={value.datePublished}
+                    imgURL={value.imgURL}
+                    slug={value.slug}
+                    key={value.slug}
+                  />
+                );
+            })}
+          </div>
         </div>
       </div>
+    </div>
+  );
+}
+
+function Article({
+  imgURL,
+  datePublished,
+  title,
+  slug,
+}: {
+  imgURL: string;
+  datePublished: string;
+  title: string;
+  slug: string;
+}) {
+  return (
+    <div className={"flex flex-col gap-5"}>
+      <div className={"flex flex-col gap-1"}>
+        <img src={imgURL} alt="" className={"rounded-xl h-[250px]"} />
+        <span>{datePublished}</span>
+        <h4 className={"font-bold text-3xl"}>{title}</h4>
+      </div>
+      <a href="#" className={"text-green-main"}>
+        Explore More →
+      </a>
     </div>
   );
 }
