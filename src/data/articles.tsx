@@ -62,7 +62,7 @@ const articles: article[] = [
     title: "Why is the sand of Pink Beach in NTT pink?",
     datePublished: "February 5, 2024",
     imgURL:
-      "public/images/Articles/WHY IS THE SAND OF PINK BEACH IN NTT PINK_/Agung Adit.jpg",
+      "/images/Articles/WHY IS THE SAND OF PINK BEACH IN NTT PINK_/Agung Adit.jpg",
     slug: "why-is-the-sand-of-pink-beach-in-ntt-pink",
   },
   {
@@ -76,7 +76,7 @@ const articles: article[] = [
     title: "Stunning: Hiking Activities on Padar Island",
     datePublished: "February 3, 2024",
     imgURL:
-      "public/images/Articles/STUNNING_ HIKING ACTIVITIES ON PADAR ISLAND/Anton Diaz.jpg",
+      "/images/Articles/STUNNING_ HIKING ACTIVITIES ON PADAR ISLAND/Anton Diaz.jpg",
     slug: "stunning-hiking-activities-on-padar-island",
   },
   {
