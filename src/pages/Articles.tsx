@@ -39,7 +39,7 @@ export default function Articles() {
         </div>
       </div>
       {/* Latest Articles */}
-      <div className={"container"}>
+      <div className={"container py-3"}>
         <div className={"flex flex-col gap-7"}>
           <hr className={"border-black max-w-80 border-[2px] mt-5 mb-2"} />
           <h2 className={"text-5xl font-bold"}>
@@ -75,13 +75,16 @@ export default function Articles() {
               </div>
               <button
                 className={
-                  "text-green-main rounded-3xl py-2 px-4 w-fit bg-green-main/20 font-semibold"
+                  "text-green-main rounded-3xl py-2 px-4 w-fit bg-green-main/20 font-semibold hover:text-white-main hover:bg-green-main"
                 }>
                 Read More
               </button>
             </div>
           </div>
-          <div className={"grid md:grid-cols-3 grid-flow-row gap-7"}>
+          <div
+            className={
+              "grid aclgrid:grid-cols-2 md:grid-cols-3 grid-flow-row gap-7"
+            }>
             {articles.map((value) => {
               if (value.slug !== "5-movies-set-in-beautiful-east-nusa-tenggara")
                 return (
@@ -119,7 +122,7 @@ function Article({
         <span>{datePublished}</span>
         <h4 className={"font-bold text-3xl"}>{title}</h4>
       </div>
-      <a href="#" className={"text-green-main"}>
+      <a href={`/articles/${slug}`} className={"text-green-main"}>
         Explore More →
       </a>
     </div>
