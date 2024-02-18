@@ -31,9 +31,54 @@ export default function Articles() {
               }
             />
           </div>
-          <button className={"bg-green-main p-[12px] rounded-md"}>
+          <button className={"bg-green-main p-[12px] rounded-md text-white"}>
             Search
           </button>
+        </div>
+      </div>
+      {/* Latest Articles */}
+      <div className={"container"}>
+        <div className={"flex flex-col gap-5"}>
+          <hr className={"border-black max-w-80 border-[2px] mt-5 mb-2"} />
+          <h2 className={"text-5xl font-bold"}>
+            LATEST <br />
+            ARTICLE
+          </h2>
+          {/* Featured */}
+          <div className={"grid md:grid-cols-2 grid-flow-row gap-7"}>
+            <img
+              src="/images/Articles/5 MOVIES SET IN BEAUTIFUL EAST NUSA TENGGARA/dok. Miles Films _ Humba Dreams.jpeg"
+              alt=""
+              className={"object-cover rounded-lg"}
+            />
+            <div className={"flex flex-col justify-between"}>
+              <div className={"flex flex-col gap-3"}>
+                <span className={"text-black-main"}>February 10, 2024</span>
+                <h3 className={"font-bold text-4xl"}>
+                  5 MOVIES SET IN BEAUTIFUL EAST NUSA TENGGARA
+                </h3>
+                <p className={"text-justify"}>
+                  Of course, this natural beauty has been used as a backdrop for
+                  several films. I don't know if the story is related, or the
+                  film helps promote the natural beauty of NTT. The latest are
+                  the films Aku Rindu and Nona Manis Sayange. Here are 10
+                  captivating movies set in East Nusa Tenggara.
+                </p>
+                <p className={"text-justify"}>
+                  These films not only showcase the stunning landscapes but also
+                  capture the unique culture and stories of the region. From the
+                  picturesque shores of Riung 17 Island to the mystical
+                  Kelimutu, these movies ...
+                </p>
+              </div>
+              <button
+                className={
+                  "text-green-main rounded-3xl py-2 px-4 w-fit bg-green-main/20 font-semibold"
+                }>
+                Read More
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
