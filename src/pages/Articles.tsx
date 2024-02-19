@@ -1,3 +1,4 @@
+import ArticleCard from "@/components/articles/ArticleCard";
 import { articles } from "@/data/articles";
 
 export default function Articles() {
@@ -88,7 +89,7 @@ export default function Articles() {
             {articles.map((value) => {
               if (value.slug !== "5-movies-set-in-beautiful-east-nusa-tenggara")
                 return (
-                  <Article
+                  <ArticleCard
                     title={value.title}
                     datePublished={value.datePublished}
                     imgURL={value.imgURL}
@@ -100,31 +101,6 @@ export default function Articles() {
           </div>
         </div>
       </div>
-    </div>
-  );
-}
-
-function Article({
-  imgURL,
-  datePublished,
-  title,
-  slug,
-}: {
-  imgURL: string;
-  datePublished: string;
-  title: string;
-  slug: string;
-}) {
-  return (
-    <div className={"flex flex-col gap-5"}>
-      <div className={"flex flex-col gap-1"}>
-        <img src={imgURL} alt="" className={"rounded-xl h-[250px]"} />
-        <span>{datePublished}</span>
-        <h4 className={"font-bold text-3xl"}>{title}</h4>
-      </div>
-      <a href={`/articles/${slug}`} className={"text-green-main"}>
-        Explore More →
-      </a>
     </div>
   );
 }

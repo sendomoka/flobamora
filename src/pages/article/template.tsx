@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { articles } from "@/data/articles";
 import ImageDescription from "./ImageDescription";
+import ArticleCard from "@/components/articles/ArticleCard";
 
 export default function ArticleTemplate() {
   const params = useParams();
@@ -18,23 +19,29 @@ export default function ArticleTemplate() {
             {article.title.toUpperCase()}
           </h1>
           <span>
-            {article.datePublished} | Source: {article.source}
+            {article.datePublished}{" "}
+            {article.source ? `| Source: ${article.source}` : ""}
           </span>
           {/* Thumbnail */}
           <img src={article.imgURL} alt={article.title} />
           <figcaption className={"text-center"}>
             Credit: {article.thumbnailCredit}
           </figcaption>
-          {article.articleMainDescription}
-          {article.body.map((value, key) => (
-            <ImageDescription
-              title={value.title}
-              credit={value.credit}
-              imgURL={value.imgURL}
-              key={key}>
-              {value.description}
-            </ImageDescription>
+          {article.articleMainDescription.map((value) => (
+            <p>{value}</p>
           ))}
+          {article.body &&
+            article.body.map((value, key) => (
+              <ImageDescription
+                title={value.title}
+                credit={value.credit}
+                imgURL={value.imgURL}
+                key={key}>
+                {value.description.map((value) => (
+                  <p>{value}</p>
+                ))}
+              </ImageDescription>
+            ))}
         </div>
         {/* Recommended Articles */}
         <div>
@@ -44,6 +51,34 @@ export default function ArticleTemplate() {
               <RecommendedArticle title={value.title} slug={value.slug} />
             ))}
           </div>
+        </div>
+      </div>
+      {/* Latest Articles */}
+      <div className={"mt-10"}>
+        <hr
+          className={"border-black dark:border-white border-2 max-w-80 mb-5"}
+        />
+        <h2 className={"text-3xl md:text-5xl font-bold mb-10"}>
+          LATEST <br /> ARTICLES
+        </h2>
+        <div
+          className={
+            "grid aclgrid:grid-cols-2 md:grid-cols-3 grid-flow-row gap-7"
+          }>
+          {articles
+            .filter((object) => object.slug !== article.slug)
+            .slice(0, 3)
+            .map((value) => {
+              return (
+                <ArticleCard
+                  title={value.title}
+                  datePublished={value.datePublished}
+                  imgURL={value.imgURL}
+                  slug={value.slug}
+                  key={value.slug}
+                />
+              );
+            })}
         </div>
       </div>
     </div>

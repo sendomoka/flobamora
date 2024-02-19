@@ -16,7 +16,7 @@ export default function ImageDescription({
       </h2>
       <img src={imgURL} alt={title} />
       <figcaption className={"text-center"}>Credit: {credit}</figcaption>
-      <div>{children}</div>
+      <div className={"space-y-3"}>{children}</div>
     </div>
   );
 }
