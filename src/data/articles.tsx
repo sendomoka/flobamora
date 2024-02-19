@@ -8,10 +8,10 @@ type article = {
   source?: string;
   thumbnailCredit: string;
   body?: {
-    title: string;
-    credit: string;
-    imgURL: string;
-    description: string[];
+    title?: string;
+    credit?: string;
+    imgURL?: string;
+    description?: string[];
   }[];
 };
 
@@ -204,47 +204,184 @@ const articles: article[] = [
     ],
     thumbnailCredit: "danaanandrew",
   },
-  // {
-  //   title: "Chasing Sunrise in the Sky of Three Colored Lakes",
-  //   datePublished: "February 6, 2024",
-  //   imgURL:
-  //     "/images/Articles/CHASING SUNRISE IN THE SKY OF THE THREE COLORED LAKES/commons.wikimedia.org.jpg",
-  //   slug: "chasing-sunrise-in-the-sky-of-three-colored-lakes",
-  // },
-  // {
-  //   title: "Why is the sand of Pink Beach in NTT pink?",
-  //   datePublished: "February 5, 2024",
-  //   imgURL:
-  //     "/images/Articles/WHY IS THE SAND OF PINK BEACH IN NTT PINK_/Agung Adit.jpg",
-  //   slug: "why-is-the-sand-of-pink-beach-in-ntt-pink",
-  // },
-  // {
-  //   title: "Wae Rebo Village: Beautiful Indonesian Village",
-  //   datePublished: "February 4, 2024",
-  //   imgURL:
-  //     "/images/Articles/WAE REBO VILLAGE_ BEAUTIFUL TRADISIONAL INDONESIAN VILLAGE/Aniq Lubabul.jpg",
-  //   slug: "wae-rebo-village-beautiful-indonesian-village",
-  // },
-  // {
-  //   title: "Stunning: Hiking Activities on Padar Island",
-  //   datePublished: "February 3, 2024",
-  //   imgURL:
-  //     "/images/Articles/STUNNING_ HIKING ACTIVITIES ON PADAR ISLAND/Anton Diaz.jpg",
-  //   slug: "stunning-hiking-activities-on-padar-island",
-  // },
-  // {
-  //   title: "The Enchantment of Koka Beach: Stunning Beauty",
-  //   datePublished: "February 2, 2024",
-  //   imgURL: "/images/Koka Beach/Christopher Moswitzer.jpg",
-  //   slug: "the-enchantment-of-koka-beach-stunning-beauty",
-  // },
-  // {
-  //   title: "Kanawa Island: The Charm of an Exotic Island",
-  //   datePublished: "February 1, 2024",
-  //   imgURL:
-  //     "/images/Articles/KANAWA ISLAND_ THE CHARM OF AN EXOTIC ISLAND/Reza Adrianov.jpg",
-  //   slug: "kanawa-island-the-charm-of-an-exotic-island",
-  // },
+  {
+    title: "Chasing Sunrise in the Sky of Three Colored Lakes",
+    datePublished: "February 6, 2024",
+    imgURL:
+      "/images/Articles/CHASING SUNRISE IN THE SKY OF THE THREE COLORED LAKES/commons.wikimedia.org.jpg",
+    slug: "chasing-sunrise-in-the-sky-of-three-colored-lakes",
+    articleMainDescription: [
+      "The Tale of Kelimutu's Three-Color Lake in Ende Regency, East Nusa Tenggara Province, Captivates Travelers from Abroad and Throughout the Archipelago, Including Locals on Flores Island.",
+      `The three colorful lakes on Mount Kelimutu are part of the Kelimutu National Park. Travelers often purchase travel packages to Flores Island with the goal of visiting Kelimutu's three-color lakes.`,
+      `Even during the Eid holiday in 2023, tourists from East Manggarai Regency took advantage of the opportunity to explore Kelimutu Lake. They embarked on a sunrise hunt at the peak of Kelimutu Lake on Saturday, April 22, 2023. Travelers from East Manggarai, along with their family entourage, traveled a considerable distance from Borong City to the summit of Kelimutu Lake before sunrise.`,
+      `Edy Lento, a local traveler from East Manggarai, shared with [Kompas.com](http://kompas.com/) on Saturday, April 22, 2023, that he and his family enjoyed a vacation at the three-color lakes of Kelimutu.`,
+    ],
+    thumbnailCredit: "commons.wikimedia.org",
+    source: "Kompas.com",
+    body: [
+      {
+        title: "The Charm of The Sunrise at Lake Kelimutu",
+        credit: "bloodydirtyboots.wordpress.com",
+        description: [
+          `**Until now, he has been intrigued by various tales and stories of Kelimutu's three-color lake, which has gained worldwide renown.**`,
+          `Foreign and domestic tourists frequently visit the lake to witness the sunrise and marvel at the three uniquely colored lakes atop Mount Kelimutu.`,
+          `"Yesterday, on Friday, (April 21, 2023), we departed from East Manggarai and stayed overnight in Moni Village. Early this morning, around 04:00 AM local time, we traversed the hills to Lake Kelimutu, parking our vehicles at the hillside parking lot," he said.`,
+          `Subsequently, they walked towards the summit of Mount Kelimutu, climbing stairs until reaching the peak.`,
+          `Edy Lento described the journey to the Kelimutu peak as truly astonishing, with the natural beauty of the forested area and the unique landscape featuring three lakes at the mountain's summit.`,
+          `"This morning the weather was very clear, allowing us to capture the sunrise and experience the chilly weather at the top of Mount Kelimutu with its three exotic-colored lakes," he added.`,
+          `They felt the marvels presented by the universe and the sun's rays at the summit of Mount Kelimutu.`,
+          `Edy Lento added that upon reaching the peak of Mount Kelimutu at the location of the summit monument, they also encountered other tourists from abroad and different regions of Indonesia who were also capturing the sunrise at the summit of Mount Kelimutu.`,
+          `"Kelimutu's three-color lake is a globally renowned destination. Foreign and domestic tourists often purchase travel packages to Kelimutu Lake located in the Kelimutu Mountains," he explained.`,
+          `As known, travel agencies and tour guides in Flores, Bali, and Jakarta have incorporated Kelimutu Lake as a favorite destination in Flores Island. From West Flores to East Flores and vice versa, they sell travel packages to Kelimutu Lake. This represents the natural and lake tourism heritage in Flores Island, East Nusa Tenggara.`,
+        ],
+        imgURL:
+          "/images/Articles/CHASING SUNRISE IN THE SKY OF THE THREE COLORED LAKES/bloodydirtyboots.wordpress.com.jpg",
+      },
+    ],
+  },
+  {
+    title: "Why is the sand of Pink Beach in NTT pink?",
+    datePublished: "February 5, 2024",
+    imgURL:
+      "/images/Articles/WHY IS THE SAND OF PINK BEACH IN NTT PINK_/Agung Adit.jpg",
+    slug: "why-is-the-sand-of-pink-beach-in-ntt-pink",
+    articleMainDescription: [
+      `One of the must-visit attractions for tourists in Komodo National Park (KNP), West Manggarai Regency, Flores, East Nusa Tenggara, is the Pink Beach. Beyond offering views of the beautiful and crystal-clear blue sea, the stretch of pink-hued sand is the distinctive allure of Pink Beach.`,
+      `Travel Blogger Kadek Arini explained that behind the captivating sand color lies the role of waves dragging coral reefs to the shore. "The coral reefs at Pink Beach are mostly pink. When the waves hit them, they break. The fragments, mixed with white sand, result in the pink-colored sand," she stated during a virtual press conference on "Comprehensive Protection of Affordable Spirit and Health" on Monday, December 21, 2020.`,
+      `According to information from Bobo on Monday, July 15, 2019, the beach's sand color on Komodo Island originates from microorganisms called foraminifera. Additionally, citing [Kompas.com](http://kompas.com/) on Monday, September 14, 2020, foram or Foraminifera is a microscopic plankton that dates back nearly a billion years in the ocean.`,
+      `So, what is the connection between plankton and the sand color at Pink Beach?`,
+    ],
+    thumbnailCredit: "Agung Adit",
+    source: "Kompas.com",
+    body: [
+      {
+        imgURL:
+          "/images/Articles/WHY IS THE SAND OF PINK BEACH IN NTT PINK_/Fiqih Alfarish.jpg",
+        credit: "Fiqih Alfarish",
+        description: [
+          `Foram has a slightly orange or coral hue, which then mixes with the beach sand. As a result, the sand at Pink Beach takes on a pinkish color.`,
+          `Although foram is said to cause the sand to turn pink, as per Tribun Travel on Sunday, August 5, 2018, the sand color is influenced by shell fragments. These broken shell fragments are carried by the waves to the coastal areas. The shell fragments then mix with the white sand from the limestone rocks around the beach.`,
+          `This process creates the distinctive color of Pink Beach, one of the seven pink sandy beaches globally, as seen by tourists today.`,
+        ],
+      },
+    ],
+  },
+  {
+    title: "Wae Rebo Village: Beautiful Indonesian Village",
+    datePublished: "February 4, 2024",
+    imgURL:
+      "/images/Articles/WAE REBO VILLAGE_ BEAUTIFUL TRADISIONAL INDONESIAN VILLAGE/Aniq Lubabul.jpg",
+    slug: "wae-rebo-village-beautiful-indonesian-village",
+    articleMainDescription: [
+      `Situated at an altitude of 1,200 meters above sea level, Wae Rebo Village in Flores resembles a paradise above the clouds. While reaching this destination requires effort, the reward upon arrival is truly equivalent to the journey taken. The breathtaking natural scenery, with mountains blending seamlessly with seven cone-shaped traditional houses, leaves a unique impression on every visitor who has ventured to Wae Rebo Village.`,
+      `Located southwest of Ruteng city in the Manggarai Regency, East Nusa Tenggara, Wae Rebo Village is not easily accessible due to its mountaintop location. A considerable amount of extra energy is required for the approximately 3 to 4-hour trek, covering a distance of 7 km, depending on physical conditions.`,
+      `I consider Wae Rebo Village the most beautiful village in Indonesia, and it's a place where mobile signals are entirely absent. In terms of tourism, Wae Rebo Village is well-managed, receiving guidance from the Indonesia Ecotourism Network. The aim is to uplift villages that were previously overlooked into sought-after tourist destinations.`,
+      `Travelers heading to Wae Rebo Village in Flores usually start their journey from Ruteng. If coming from Denpasar (Bali), direct flights to Ruteng are available. In case there are no flights to Ruteng, buses or travel services from Labuan Bajo, the capital of West Manggarai Regency, which takes approximately 6 hours, can be utilized. Upon reaching Ruteng, the journey continues to the villages of Denge or Dintor, taking about 2 hours, and Denge is the last village accessible by vehicle.`,
+    ],
+    thumbnailCredit: "Aniq Lubabul",
+    source: "Kompas.com",
+    body: [
+      {
+        imgURL:
+          "/images/Articles/WAE REBO VILLAGE_ BEAUTIFUL TRADISIONAL INDONESIAN VILLAGE/Wirestock Creators.jpg",
+        credit: "Wirestock Creators",
+        description: [
+          `To reach Denge, visitors can opt for motorcycle taxis (ojek) or wooden trucks, usually available at Terminal Mena operating from 09:00 to 10:00. For a more budget-friendly choice, the wooden trucks are recommended, though they don't operate every day.`,
+          `The journey then continues on foot to Wae Rebo Village, taking approximately 4-5 hours. If choosing an ojek from Ruteng to Denge, the cost can be higher, ranging from Rp 150,000 to Rp 200,000 for a single trip. Opting for the wooden trucks is more economical, with a fare of only Rp 30,000 per person.`,
+          `In terms of facilities, Denge Village has a home stay available for accommodation. Not far from the home stay, there is an information center and a library.`,
+          `Upon arriving in Wae Rebo Village, visitors can stay in the traditional houses owned by the locals. There are no specific home stays or accommodations here, as the village consists of only 7 traditional houses.`,
+          `In addition to its breathtaking scenery, the warmth of the villagers welcomes visitors upon arrival in Wae Rebo. Here, you'll find the iconic Mbaru Niang, a traditional architectural wonder made of wood with a thatched roof woven from cogon grass. The unique cone-shaped structures have stood for 19 generations, attracting curious tourists, especially from abroad.`,
+          `Surrounded by lush greenery and beautiful hills, the seven Mbaru Niang structures create a picturesque landscape with a cool climate, surrounded by forests. Recognized as a UNESCO World Heritage cultural site in 2012, Wae Rebo Village is a historical and culturally significant destination.`,
+        ],
+      },
+    ],
+  },
+  {
+    title: "Stunning: Hiking Activities on Padar Island",
+    datePublished: "February 3, 2024",
+    imgURL:
+      "/images/Articles/STUNNING_ HIKING ACTIVITIES ON PADAR ISLAND/Anton Diaz.jpg",
+    slug: "stunning-hiking-activities-on-padar-island",
+    articleMainDescription: [
+      `Embark on an exhilarating journey as you partake in hiking activities on Padar Island, a mesmerizing gem within the Komodo National Park. The ascent to the island's summit promises an awe-inspiring adventure, where every step unveils breathtaking panoramas that will leave hikers in absolute wonder.`,
+      `Reaching the pinnacle of Padar Island is not just a hike; it's an immersive experience offering unparalleled rewards. From the summit, soak in the astonishing 360-degree views that stretch across the pristine waters, numerous islands, and picturesque beaches, creating a visual feast for nature enthusiasts.`,
+      `Whether you opt for a day trip from the nearby hub of Labuan Bajo or embark on a more extended live-aboard expedition, hiking Padar Island stands out as a must-do activity in the Komodo National Park. The flexibility of this adventure caters to both those seeking a brief escape and those indulging in a more extended exploration of the stunning surroundings.`,
+      `Padar Island's hiking trails offer more than just physical exertion; they lead adventurers through nature's canvas. The vibrant colors of the landscape, the azure waters, and the golden beaches contribute to an enchanting masterpiece that captivates the senses and creates lasting memories for those who venture into this natural wonder.`,
+    ],
+    thumbnailCredit: "Anton Diaz",
+    source: "Kompas.com",
+    body: [
+      {
+        title: "How to Get to The Padar Island Hike",
+        credit: "Wendy Stevian",
+        description: [
+          `Reaching Padar Island offers two main options: a day excursion from Labuan Bajo or incorporating Padar into your Komodo Diving Liveaboard experience. The liveaboard, essentially a spacious boat equipped with cabins, scuba diving gear, a kitchen, and more, allows you to stay on board, eliminating the need for daily transit to and from Labuan Bajo. This setup positions you conveniently at the base of Padar and other hiking or diving sites, ensuring you're ready to immerse yourself in the beauty of sunrise without the hassle of daily commuting.`,
+          `Choosing a Komodo Diving Liveaboard entails comprehensive inclusions such as meals, scuba dives, and various activities. The cost varies, ranging from $200 per night to $1000 for the most luxurious cabins and boats. Booking a liveaboard is simplified through platforms like [Liveaboard.com](http://liveaboard.com/), a reputable global website that provides a comprehensive list of available boats, trips, cabin details, and included activities, making it a reliable choice for securing your unforgettable Komodo experience.`,
+        ],
+        imgURL:
+          "/images/Articles/STUNNING_ HIKING ACTIVITIES ON PADAR ISLAND/Wendy Stevian.jpg",
+      },
+    ],
+  },
+  {
+    title: "The Enchantment of Koka Beach: Stunning Beauty",
+    datePublished: "February 2, 2024",
+    imgURL: "/images/Koka Beach/Christopher Moswitzer.jpg",
+    slug: "the-enchantment-of-koka-beach-stunning-beauty",
+    articleMainDescription: [
+      `Koka Beach, nestled in the village of Wolowiro, Paga District, Sikka Regency, East Nusa Tenggara (NTT), is a familiar destination for many locals on Flores Island. Serving as a popular spot for weekend getaways and holidays, both local residents and foreign tourists gather in groups to indulge in the beauty of this coastal paradise. Some even opt to stay overnight, immersing themselves in the serene atmosphere.`,
+      `If you traverse the Trans Flores Road from Maumere towards Ende, a prominent sign reading "Destinasi Wisata Pantai Koka" (Koka Beach Tourism Destination) on the left side of the road signals the proximity of this beach, just about 2 kilometers from the Trans Flores Road. While the road conditions may be challenging, with some parts still unpaved, worry not. Once you enter, you'll soon find sections that have been smoothly asphalted.`,
+      `Approximately 35 km from Maumere, a one-hour motorcycle ride brings you to Pantai Koka. At the first gate, a nominal entrance fee is collected – Rp 5,000 for motorcycles and Rp 10,000 for cars. As you continue your journey, you'll reach the shores of Pantai Koka, where a parking fee equivalent to the entrance fee is applied.`,
+      `On weekends, the beach is bustling with children and adults alike, engaging in activities ranging from swimming in the sea to capturing delightful moments with selfies against the backdrop of the white sandy beach. Local residents provide bamboo seating arrangements, free of charge, along the shoreline. Pantai Koka also offers homestay accommodations, especially catering to foreign tourists.`,
+      `Beyond the joys of swimming and capturing picturesque moments, visitors can relax on bamboo seating while enjoying refreshments like coffee, young corn, banana fritters, and other local snacks offered by nearby vendors. For those craving a grilled fish experience, it's readily available. A visit to Pantai Koka is sure to captivate, providing an enchanting escape with its beauty that will linger in your memory.`,
+    ],
+    thumbnailCredit: "Christopher Moswitzer",
+    source: "",
+    body: [
+      {
+        title: "Surrounded by Two Hills",
+        credit: "tripadvisor.com",
+        description: [
+          `Koka Beach is flanked by two small hills, namely Rodja on the west side of the beach and Bukit Ndate Sare on the east. Bukit Rodja features a steep cliff right at the edge of the beach, rising to a height of 50-100 meters. At the base of Bukit Rodja lies a rocky cave known as Lia Wio, extending approximately 500 meters inland.`,
+          `As recounted by Frans Koke, a local resident, a foreign tourist from the Netherlands explored the cave's depth beneath Bukit Rodja in 1992 but only reached a depth of 50 meters. The cave's ceiling boasts numerous beautiful rock formations (stalactites), and it can be explored during low tide.`,
+          `At the base of Bukit Ndate Sare, remnants of a Japanese bunker from World War II can be found, with a depth of about 50 meters. Within this area, old tanks and weaponry, remnants of the Japanese military, are still preserved. Both the Japanese bunker and the natural cave have never been visited by tourists, as locals believe the area holds sacred significance.`,
+        ],
+        imgURL:
+          "/images/Articles/THE ENCHANTMENT OF KOKA BEACH_ STUNNING BEAUTY/tripadvisor.com.jpg",
+      },
+    ],
+  },
+  {
+    title: "Kanawa Island: The Charm of an Exotic Island",
+    datePublished: "February 1, 2024",
+    imgURL:
+      "/images/Articles/KANAWA ISLAND_ THE CHARM OF AN EXOTIC ISLAND/Reza Adrianov.jpg",
+    slug: "kanawa-island-the-charm-of-an-exotic-island",
+    articleMainDescription: [
+      `Kanawa Island in Labuan Bajo is a small paradise adorned with thousands of beautiful starfish scattered along its shores. Locals commonly refer to this gem as Kanawa, and describing one of the numerous beauties found on Flores Island never seems to end.`,
+      `Known for its breathtaking scenery, every corner of Flores Island is truly captivating. From the westernmost point to the easternmost edge, extraordinary landscapes and tourist spots await discovery.`,
+      `Starting from the Komodo National Park, your journey can lead you to Kanawa Island, a hidden paradise on the western edge of Flores.`,
+      `Pulau Kanawa is a small island boasting crystal-clear waters, pristine white sands, and remarkably beautiful coral reefs. The gradient of the blue sea, combined with the tranquil surroundings, makes it an ideal destination for a rejuvenating getaway, providing respite from the demands of daily life.`,
+      `The quaint cottages along the shoreline, surrounded by lush ketapang trees, create a mesmerizing atmosphere, leaving you feeling like the luckiest person on Earth to revel in such natural beauty.`,
+      `Kanawa Island has become one of the most sought-after destinations for both local and international tourists in Labuan Bajo, Flores.`,
+    ],
+    thumbnailCredit: "Reza Adrianov",
+    source: "gotravelaindonesia.com",
+    body: [
+      {
+        title: "Where is Kanawa Island?",
+        credit: "helloflores",
+        description: [
+          `Pulau Kanawa is precisely situated in Labuan Bajo, covering an area of 35 hectares. This white sandy island is part of the Komodo Islands cluster, located in the West Manggarai Regency, East Nusa Tenggara Province.`,
+          `This small island boasts an extraordinary marine panorama and is separated by the larger Pungu or Kelor Island, which is also a key destination for sailing tours in the Komodo region.`,
+          `The greatest wonder of Kanawa Island, Labuan Bajo, lies in its exceptionally beautiful underwater scenery. You will be fascinated by the marine biodiversity inhabiting the waters around this island.`,
+          `This tourist attraction is managed by an Italian. Previously, the island was under the management of the local population, but its condition became less maintained. Located within the Komodo National Park, the island can be reached in 10 minutes from Komodo International Airport to Bajo Port. Afterward, you will continue the journey by boat for approximately 1 hour.`,
+        ],
+        imgURL:
+          "/images/Articles/KANAWA ISLAND_ THE CHARM OF AN EXOTIC ISLAND/helloflores.jpg",
+      },
+    ],
+  },
 ];
 
 export { articles };

@@ -4,10 +4,10 @@ export default function ImageDescription({
   credit,
   children,
 }: {
-  title: string;
-  imgURL: string;
-  credit: string;
-  children: React.ReactNode;
+  title?: string;
+  imgURL?: string;
+  credit?: string;
+  children?: React.ReactNode;
 }) {
   return (
     <div className={"flex flex-col gap-3"}>

@@ -37,9 +37,8 @@ export default function ArticleTemplate() {
                 credit={value.credit}
                 imgURL={value.imgURL}
                 key={key}>
-                {value.description.map((value) => (
-                  <p>{value}</p>
-                ))}
+                {value.description &&
+                  value.description.map((value) => <p>{value}</p>)}
               </ImageDescription>
             ))}
         </div>
