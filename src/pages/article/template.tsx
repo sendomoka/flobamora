@@ -12,7 +12,7 @@ export default function ArticleTemplate() {
 
   return (
     <div className={"container pt-24"}>
-      <div className={"flex flex-col md:flex-row md:justify-between"}>
+      <div className={"flex flex-col md:flex-row md:justify-between gap-5"}>
         <div className="flex flex-col gap-3 text-justify md:w-2/3">
           {/* Main Section */}
           <h1 className={"font-extrabold text-4xl md:text-6xl text-left"}>
@@ -43,7 +43,7 @@ export default function ArticleTemplate() {
             ))}
         </div>
         {/* Recommended Articles */}
-        <div>
+        <div className={"md:w-1/3"}>
           <h4 className={"text-3xl font-bold mb-3"}>RECOMMENDED ARTICLES</h4>
           <div className={"flex flex-col gap-2"}>
             {articles.slice(0, 5).map((value) => (
@@ -62,7 +62,7 @@ export default function ArticleTemplate() {
         </h2>
         <div
           className={
-            "grid aclgrid:grid-cols-2 md:grid-cols-3 grid-flow-row gap-7"
+            "grid aclgrid:grid-cols-1 md:grid-cols-3 grid-flow-row gap-7"
           }>
           {articles
             .filter((object) => object.slug !== article.slug)
