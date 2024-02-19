@@ -28,11 +28,7 @@ export default function ExploreMore() {
         </p>
       </div>
       <div className={"text-white"}>
-        <Flicking
-          align={"prev"}
-          onMoveEnd={(e) => {
-            console.log(e);
-          }}>
+        <Flicking align={"prev"}>
           <div
             className={
               "w-[300px] bg-cover bg-no-repeat h-[600px] flex items-end rounded-3xl mr-6"

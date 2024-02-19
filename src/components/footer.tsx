@@ -13,7 +13,6 @@ export default function Footer() {
       try {
         const data = await getWeather();
         setWeather(data);
-        console.log("Updated weather:", data);
       } catch (error) {
         console.error("Error fetching weather:", error);
       }
@@ -30,7 +29,6 @@ export default function Footer() {
     return () => clearInterval(interval);
   }, []);
 
-  console.log(Intl.DateTimeFormat().resolvedOptions().timeZone);
   const { theme } = useTheme();
   return (
     <div className={"container mt-10"}>
