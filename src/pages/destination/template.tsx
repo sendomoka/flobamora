@@ -6,7 +6,7 @@ export default function DestinationTemplate() {
           "h-screen w-full bg-cover bg-[60%_center] flex flex-col gap-3 justify-center items-center text-white-main px-4 text-center"
         }
         style={{
-          backgroundImage: `url('/images/Komodo Island/Abimanyu Photowork.jpg')`,
+          backgroundImage: `url('https://cdn.discordapp.com/attachments/1204994105298526220/1210435559546163280/Abimanyu_Photowork.jpg?ex=65ea8cf6&is=65d817f6&hm=06baf9eb6f3925ddc33bd31c0320974e10d5353bd1876abcd0d6a84ca7058127&')`,
         }}>
         <h1
           className={
@@ -43,7 +43,7 @@ export default function DestinationTemplate() {
               ABOUT <br className={"hidden md:block"} /> KOMODO ISLAND
             </h2>
             <img
-              src="/images/Komodo Island/helloflores.com.jpg"
+              src="https://cdn.discordapp.com/attachments/1204994105298526220/1210435561441992714/helloflores.com.jpg?ex=65ea8cf6&is=65d817f6&hm=5ab0886ae5520da1e0e646a7e9e869437fa1bd2204a5a572d82e4ac34371ba48&"
               alt=""
               className={" md:hidden mx-auto"}
             />
@@ -78,7 +78,7 @@ export default function DestinationTemplate() {
             </div>
           </div>
           <img
-            src="/images/Komodo Island/helloflores.com.jpg"
+            src="https://cdn.discordapp.com/attachments/1204994105298526220/1210435561441992714/helloflores.com.jpg?ex=65ea8cf6&is=65d817f6&hm=5ab0886ae5520da1e0e646a7e9e869437fa1bd2204a5a572d82e4ac34371ba48&"
             alt=""
             className={"max-w-[448px] max-h-[400px] hidden md:block"}
           />
@@ -94,7 +94,7 @@ export default function DestinationTemplate() {
       <div
         className={"h-[80vh] w-fuil bg-cover bg-center"}
         style={{
-          backgroundImage: `url('/images/Komodo Island/Swandi Changra.jpg')`,
+          backgroundImage: `url('https://cdn.discordapp.com/attachments/1204994105298526220/1210435563753177169/Swandi_Changra.jpg?ex=65ea8cf7&is=65d817f7&hm=fdd468bade75d8a359f64b7bf55429b4cbee343e8d6494ba35f893049cae29ba&')`,
         }}>
         <div className={"container h-full flex justify-start items-end py-20"}>
           <h4

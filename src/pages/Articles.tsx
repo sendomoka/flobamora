@@ -10,7 +10,7 @@ export default function Articles() {
           "min-h-[500px] bg-cover bg-center bg-no-repeat w-full flex flex-col justify-center items-center text-center gap-10 px-3"
         }
         style={{
-          backgroundImage: `url('/images/Komodo Island/Deri Nazaroni.jpg')`,
+          backgroundImage: `url('https://cdn.discordapp.com/attachments/1204994105298526220/1210435561043525642/Deri_Nazaroni.jpg?ex=65ea8cf6&is=65d817f6&hm=3157b64b5cbc2862bd009e05b752fa241ee52236e33dfbae0f4d22d6f10b0af6&')`,
         }}>
         <h1
           className={
@@ -50,7 +50,7 @@ export default function Articles() {
           {/* Featured */}
           <div className={"grid md:grid-cols-2 grid-flow-row gap-7"}>
             <img
-              src="/images/Articles/5 MOVIES SET IN BEAUTIFUL EAST NUSA TENGGARA/dok. Miles Films _ Humba Dreams.jpeg"
+              src="https://cdn.discordapp.com/attachments/1204994105298526220/1210384816822812802/dok._Miles_Films___Humba_Dreams.jpeg?ex=65ea5db4&is=65d7e8b4&hm=e39a23a43833d51e4277063bbeeee78ec7ba321503eb0fbf1e0725ca3bebfddb&"
               alt=""
               className={"object-cover rounded-lg"}
             />

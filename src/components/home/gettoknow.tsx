@@ -3,7 +3,7 @@ export default function GetToKnow() {
     <div
       className={"w-full h-screen left-0 bg-cover bg-center"}
       style={{
-        backgroundImage: "url('/images/Padar Island/Wendy Stevian.jpg')",
+        backgroundImage: "url('https://cdn.discordapp.com/attachments/1204994105298526220/1210433947452842075/Wendy_Stevian.jpg?ex=65ea8b75&is=65d81675&hm=b186c410b24db5af3b523d583078d2dc114c8bd01cb1d744bf58d80067f09e71&')",
       }}>
       <div
         className={
@@ -30,14 +30,14 @@ export default function GetToKnow() {
         </div>
         <ArticleCard
           imgURL={
-            "/images/Articles/5 MOVIES SET IN BEAUTIFUL EAST NUSA TENGGARA/dok. Miles Films _ Humba Dreams.jpeg"
+            "https://cdn.discordapp.com/attachments/1204994105298526220/1210384816822812802/dok._Miles_Films___Humba_Dreams.jpeg?ex=65ea5db4&is=65d7e8b4&hm=e39a23a43833d51e4277063bbeeee78ec7ba321503eb0fbf1e0725ca3bebfddb&"
           }
           title="10 Movies Set in East Nusa Tenggara"
           description="Of course, this natural beauty has been used as a backdrop for several films. I don't know if the story is related, or the film helps promote the natural beauty of NTT. The latest are the films Aku Rindu and Nona Manis Sayange, here are 10 ..."
         />
         <ArticleCard
           imgURL={
-            "/images/Articles/THE ENCHANTMENT OF KOKA BEACH_ STUNNING BEAUTY/@theouterislands.jpg"
+            "https://cdn.discordapp.com/attachments/1204994105298526220/1210387177855385650/theouterislands.jpg?ex=65ea5fe7&is=65d7eae7&hm=df1ef8f14c5cdbf2bd6ce6df31ec173f96cad7cb8ed6bcbbafa025d803c79d38&"
           }
           title="10 Best Beaches in East Nusa Tenggara"
           description="There is no need to doubt the beauty of the beaches in NTT. Below are recommendations for beautiful beaches in NTT that must be on your holiday list!"
