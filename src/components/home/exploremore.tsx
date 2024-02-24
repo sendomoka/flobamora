@@ -1,6 +1,7 @@
 import Flicking from "@egjs/preact-flicking";
 import "@egjs/preact-flicking/dist/flicking.css";
 import "@egjs/preact-flicking/dist/flicking-inline.css";
+import { destinations } from "@/data/destinations";
 
 export default function ExploreMore() {
   return (
@@ -16,9 +17,6 @@ export default function ExploreMore() {
             }>
             EXPLORE MORE <br /> EAST NUSA TENGGARA
           </h2>
-          <h5 className={"font-semibold"}>
-            <a href={"/destinations"}>Explore all destinations →</a>
-          </h5>
         </div>
         <p className={"text-green-main dark:text-white md:w-2/5"}>
           Not sure what to do on your next trip to East Nusa Tenggara? No
@@ -28,53 +26,46 @@ export default function ExploreMore() {
       </div>
       <div className={"text-white"}>
         <Flicking align={"prev"}>
-          <div
-            className={
-              "w-[300px] bg-cover bg-no-repeat h-[600px] flex items-end rounded-3xl mr-6"
-            }
-            style={{
-              backgroundImage: "url('https://cdn.discordapp.com/attachments/1204994105298526220/1210435560251068446/Dana_Englich.jpg?ex=65ea8cf6&is=65d817f6&hm=347a4b337b7f443fe89e9e7dce6efb98a92a04a4ebd98b618dda2452c509dc80&')",
-              backgroundPositionX: "75%",
-            }}
-            role={"presentation"}>
-            <h3 className={"text-5xl p-6 font-bold"}>PULAU KOMODO</h3>
-          </div>
-          <div
-            className={
-              "w-[300px] bg-cover bg-no-repeat h-[600px] flex items-end rounded-3xl mr-6"
-            }
-            style={{
-              backgroundImage: "url('https://cdn.discordapp.com/attachments/1204994105298526220/1210436773734391869/Jennifer_Polanco.jpg?ex=65ea8e17&is=65d81917&hm=648f269b03894940bbe97da047c4138240f4da8ab0a0ce2c526be50d20794695&')",
-              backgroundPositionX: "center",
-            }}
-            role={"presentation"}>
-            <h3 className={"text-5xl p-6 font-bold"}>PANTAI PINK</h3>
-          </div>
-          <div
-            className={
-              "w-[300px] bg-cover bg-no-repeat h-[600px] flex items-end rounded-3xl mr-6"
-            }
-            style={{
-              backgroundImage:
-                "url('https://cdn.discordapp.com/attachments/1204994105298526220/1210437459779788881/wonderful_indonesia.jpg?ex=65ea8ebb&is=65d819bb&hm=65ac2027e4876f5e1c3bcf5e706a75f7acec8b2b223ba778e5a0a9c6bce1d18c&')",
-              backgroundPositionX: "center",
-            }}
-            role={"presentation"}>
-            <h3 className={"text-5xl p-6 font-bold"}>DANAU KELIMUTU</h3>
-          </div>
-          <div
-            className={
-              "w-[300px] bg-cover bg-no-repeat h-[600px] flex items-end rounded-3xl mr-6"
-            }
-            style={{
-              backgroundImage: "url('https://cdn.discordapp.com/attachments/1204994105298526220/1210433947452842075/Wendy_Stevian.jpg?ex=65ea8b75&is=65d81675&hm=b186c410b24db5af3b523d583078d2dc114c8bd01cb1d744bf58d80067f09e71&')",
-              backgroundPositionX: "center",
-            }}
-            role={"presentation"}>
-            <h3 className={"text-5xl p-6 font-bold"}>PULAU PADAR</h3>
-          </div>
+          {destinations.map((value, key) => {
+            return (
+              <div className={"flex flex-col gap-8"}>
+                <CardDestination
+                  imgURL={value.imgURL}
+                  mapLink={""}
+                  name={value.name}
+                  key={key}
+                />
+              </div>
+            );
+          })}
         </Flicking>
       </div>
     </div>
+  );
+}
+
+function CardDestination({
+  name,
+  mapLink,
+  imgURL,
+}: {
+  name: string;
+  mapLink: string;
+  imgURL: string;
+}) {
+  return (
+    <a href={mapLink}>
+      <div
+        className={
+          "w-[300px] bg-cover bg-no-repeat h-[600px] flex items-end rounded-3xl mr-6"
+        }
+        style={{
+          backgroundImage: `url('${imgURL}')`,
+          backgroundPositionX: "center",
+        }}
+        role={"presentation"}>
+        <h3 className={"text-5xl p-6 font-bold"}>{name}</h3>
+      </div>
+    </a>
   );
 }

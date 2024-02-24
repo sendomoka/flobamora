@@ -30,11 +30,8 @@ export default function Header() {
             <MenuSheet />
           </div>
           <div class="hidden lg:flex items-center">
-            <a href="/todo">
-              <Button variant="link">{t("Things To Do")}</Button>
-            </a>
-            <a href="/tips">
-              <Button variant="link">{t("Practical Tips")}</Button>
+            <a href="/articles">
+              <Button variant="link">{t("Articles")}</Button>
             </a>
             <a href="/accomodations">
               <Button variant="link">{t("Lodging & Accommodations")}</Button>

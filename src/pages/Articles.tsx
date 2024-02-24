@@ -2,6 +2,7 @@ import ArticleCard from "@/components/articles/ArticleCard";
 import { articles } from "@/data/articles";
 
 export default function Articles() {
+  const firstArticle = articles[0];
   return (
     <div className={"flex flex-col gap-4"}>
       {/* Header */}
@@ -18,26 +19,6 @@ export default function Articles() {
           }>
           Find Articles Effortlessly and Swiftly
         </h1>
-        <div className={"flex gap-3 w-full mx-3 justify-center md:w-3/5"}>
-          <div
-            className={
-              "flex gap-1 bg-white px-[12px] py-[6px] rounded-md w-full"
-            }>
-            <img src="/svgs/search.svg" width={"16"} height={"16"} alt="" />
-            <input
-              type="text"
-              name="search"
-              id="search"
-              className={"text-black px-3 w-full outline-none"}
-              placeholder={
-                "Search for articles based on title, destination, topic"
-              }
-            />
-          </div>
-          <button className={"bg-green-main p-[12px] rounded-md text-white"}>
-            Search
-          </button>
-        </div>
       </div>
       {/* Latest Articles */}
       <div className={"container py-3"}>
@@ -56,30 +37,26 @@ export default function Articles() {
             />
             <div className={"flex flex-col justify-between"}>
               <div className={"flex flex-col gap-3"}>
-                <span className={"text-black-main"}>February 10, 2024</span>
+                <span className={"text-black-main"}>
+                  {firstArticle.datePublished}
+                </span>
                 <h3 className={"font-bold text-4xl"}>
-                  5 MOVIES SET IN BEAUTIFUL EAST NUSA TENGGARA
+                  {firstArticle.title.toUpperCase()}
                 </h3>
-                <p className={"text-justify"}>
-                  Of course, this natural beauty has been used as a backdrop for
-                  several films. I don't know if the story is related, or the
-                  film helps promote the natural beauty of NTT. The latest are
-                  the films Aku Rindu and Nona Manis Sayange. Here are 10
-                  captivating movies set in East Nusa Tenggara.
-                </p>
-                <p className={"text-justify"}>
-                  These films not only showcase the stunning landscapes but also
-                  capture the unique culture and stories of the region. From the
-                  picturesque shores of Riung 17 Island to the mystical
-                  Kelimutu, these movies ...
-                </p>
+                {firstArticle.description?.map((value, key) => (
+                  <p key={key} className={"text-justify"}>
+                    {value}
+                  </p>
+                ))}
               </div>
-              <button
-                className={
-                  "text-green-main rounded-3xl py-2 px-4 w-fit bg-green-main/20 font-semibold hover:text-white-main hover:bg-green-main"
-                }>
-                Read More
-              </button>
+              <a href={`/articles/${firstArticle.slug}`}>
+                <button
+                  className={
+                    "text-green-main rounded-3xl py-2 px-4 w-fit bg-green-main/20 font-semibold hover:text-white-main hover:bg-green-main"
+                  }>
+                  Read More
+                </button>
+              </a>
             </div>
           </div>
           <div
