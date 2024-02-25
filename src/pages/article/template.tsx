@@ -20,7 +20,11 @@ export default function ArticleTemplate() {
           </h1>
           <span>
             {article.datePublished}{" "}
-            {article.source ? `| Source: ${article.source}` : ""}
+            {article.source ? (
+              <span>
+                | Source: <a href={article.sourceURL} className="hover:text-green-main" target="_blank">{article.source}</a>
+              </span>
+            ) : ""}
           </span>
           {/* Thumbnail */}
           <img src={article.imgURL} alt={article.title} />

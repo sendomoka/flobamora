@@ -17,7 +17,7 @@ export default function Articles() {
           className={
             "font-extrabold text-4xl md:text-6xl xl:text-7xl shadow-xl text-white"
           }>
-          Find Articles Effortlessly and Swiftly
+          Read handpicked articles to get you inspired by East Nusa Tenggara
         </h1>
       </div>
       {/* Latest Articles */}
