@@ -6,6 +6,7 @@ type article = {
   description?: string[];
   articleMainDescription: string[];
   source?: string;
+  sourceURL?: string,
   thumbnailCredit: string;
   body?: {
     title?: string;
@@ -22,7 +23,8 @@ const articles: article[] = [
     imgURL:
       "https://cdn.discordapp.com/attachments/1204994105298526220/1210384816822812802/dok._Miles_Films___Humba_Dreams.jpeg?ex=65ea5db4&is=65d7e8b4&hm=e39a23a43833d51e4277063bbeeee78ec7ba321503eb0fbf1e0725ca3bebfddb&",
     slug: "5-movies-set-in-beautiful-east-nusa-tenggara",
-    source: "Kompas.com",
+    source: "IDN TIMES",
+    sourceURL: "https://www.idntimes.com/hype/entertainment/sandinugraha/rekomendasi-film-nusa-tenggara-timur-c1c2",
     thumbnailCredit: "dok. Miles Films / Humba Dreams",
     description: [
       "Of course, this natural beauty has been used as a backdrop for several films. I don't know if the story is related, or the film helps promote the natural beauty of NTT. The latest are the films Aku Rindu and Nona Manis Sayange. Here are 10 captivating movies set in East Nusa Tenggara.",
@@ -88,7 +90,8 @@ const articles: article[] = [
     imgURL:
       "https://cdn.discordapp.com/attachments/1204994105298526220/1210387177855385650/theouterislands.jpg?ex=65ea5fe7&is=65d7eae7&hm=df1ef8f14c5cdbf2bd6ce6df31ec173f96cad7cb8ed6bcbbafa025d803c79d38&",
     slug: "top-3-best-beaches-in-east-nusa-tenggara",
-    source: "",
+    source: "Liputan 6",
+    sourceURL: "https://www.liputan6.com/regional/read/2606166/11-pantai-terindah-ntt-yang-memikat-mata-dan-hati?page=2",
     thumbnailCredit: "@theouterislands",
     articleMainDescription: [
       `Welcome to the unforgettable natural exoticism of Indonesia! This article will take you through the beauty of three of the best beaches in East Nusa Tenggara, places where natural charm and cultural richness come together in perfect harmony. East Nusa Tenggara, with its extraordinary natural wealth, presents an unforgettable holiday experience for visitors. From clean white sand to clear sea water, each beach has its own charm. Get ready to explore and be enchanted by the alluring natural beauty of the three best beach destinations that will be revealed in this article. Enjoy your virtual trip to the tropical paradise of Indonesia!`,
@@ -134,6 +137,7 @@ const articles: article[] = [
       `For those embarking on their inaugural journey to this enchanting part of Indonesia, here are 5 suggestions to facilitate your exploration of this magnificent Komodo Island`,
     ],
     source: "Wonderful Indonesia",
+    sourceURL: "https://www.indonesia.travel/id/id/ide-liburan/11-hal-seru-ini-wajib-dicoba-saat-berkunjung-ke-ntt-nggak-akan-kecewa",
     thumbnailCredit: "Swandi Changra",
     body: [
       {
