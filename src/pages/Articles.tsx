@@ -1,8 +1,10 @@
 import ArticleCard from "@/components/articles/ArticleCard";
 import { articles } from "@/data/articles";
+import { useTranslation } from "react-i18next";
 
 export default function Articles() {
   const firstArticle = articles[0];
+  const { t } = useTranslation();
   return (
     <div className={"flex flex-col gap-4"}>
       {/* Header */}
@@ -17,7 +19,7 @@ export default function Articles() {
           className={
             "font-extrabold text-4xl md:text-6xl xl:text-7xl shadow-xl text-white"
           }>
-          Read handpicked articles to get you inspired by East Nusa Tenggara
+          {t("Read handpicked articles to get you inspired by East Nusa Tenggara")}
         </h1>
       </div>
       {/* Latest Articles */}
@@ -25,11 +27,10 @@ export default function Articles() {
         <div className={"flex flex-col gap-7"}>
           <hr className={"border-black max-w-80 border-[2px] mt-5 mb-2"} />
           <h2 className={"text-5xl font-bold"}>
-            LATEST <br />
-            ARTICLE
+            {t("LATEST ARTICLES")}
           </h2>
           {/* Featured */}
-          <div className={"grid md:grid-cols-2 grid-flow-row gap-7"}>
+          <div className={"grid md:grid-cols-2 grid-flow-row gap-7 hover:translate-y-1 transition-transform duration-300"}>
             <img
               src="https://cdn.discordapp.com/attachments/1204994105298526220/1210384816822812802/dok._Miles_Films___Humba_Dreams.jpeg?ex=65ea5db4&is=65d7e8b4&hm=e39a23a43833d51e4277063bbeeee78ec7ba321503eb0fbf1e0725ca3bebfddb&"
               alt=""
@@ -41,11 +42,11 @@ export default function Articles() {
                   {firstArticle.datePublished}
                 </span>
                 <h3 className={"font-bold text-4xl"}>
-                  {firstArticle.title.toUpperCase()}
+                  {t(firstArticle.title).toUpperCase()}
                 </h3>
                 {firstArticle.description?.map((value, key) => (
                   <p key={key} className={"text-justify"}>
-                    {value}
+                    {t(value)}
                   </p>
                 ))}
               </div>
@@ -54,7 +55,7 @@ export default function Articles() {
                   className={
                     "text-green-main rounded-3xl py-2 px-4 w-fit bg-green-main/20 font-semibold hover:text-white-main hover:bg-green-main"
                   }>
-                  Read More
+                  {t("Read More")}
                 </button>
               </a>
             </div>

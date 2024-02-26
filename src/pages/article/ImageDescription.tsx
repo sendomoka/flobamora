@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 export default function ImageDescription({
   title,
   imgURL,
@@ -9,13 +10,14 @@ export default function ImageDescription({
   credit?: string;
   children?: React.ReactNode;
 }) {
+  const { t } = useTranslation();
   return (
     <div className={"flex flex-col gap-3"}>
       <h2 className={"text-3xl md:text-5xl font-bold text-left mb-3"}>
-        {title}
+        {t(title || "")}
       </h2>
       <img src={imgURL} alt={title} />
-      <figcaption className={"text-center"}>Credit: {credit}</figcaption>
+      <figcaption className={"text-center"}>{t("Credit")}: {credit}</figcaption>
       <div className={"space-y-3"}>{children}</div>
     </div>
   );

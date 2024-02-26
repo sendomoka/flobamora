@@ -23,7 +23,7 @@ const destinations: destination[] = [
   {
     name: "KELIMUTU LAKE",
     description:
-      'Kelimutu is a combination of the words "keli" which means mountain and the word "mutu" which means to boil. According to local beliefs, the colors in Kelimutu Lake have their own meanings and have very powerful natural powers.',
+      "Kelimutu is a combination of the words \"keli\" which means mountain and the word \"mutu\" which means to boil. According to local beliefs, the colors in Kelimutu Lake have their own meanings and have very powerful natural powers.",
     imgURL: "https://cdn.discordapp.com/attachments/1204994105298526220/1210437459779788881/wonderful_indonesia.jpg?ex=65ea8ebb&is=65d819bb&hm=65ac2027e4876f5e1c3bcf5e706a75f7acec8b2b223ba778e5a0a9c6bce1d18c&",
     slug: "kelimutu-lake",
   },
@@ -37,14 +37,14 @@ const destinations: destination[] = [
   {
     name: "WAE REBO VILLAGE",
     description:
-      "The traditional village of Wae Rebo in the district of Manggarai on the island of Flores, East Nusatenggara, has received the Top Award of Excellence from UNESCO in the 2012 UNESCO Asia Pacific Heritage Awards, announced in Bangkok on 27 August 2012.",
+      "The traditional village of Wae Rebo in the district of Manggarai on the island of Flores, East Nusatenggara, has received the Top Award of Excellence from UNESCO in the 2012 UNESCO Asia Pacific Heritage Awards, announced in Bangkok on 27 August 2012.",
     imgURL: "https://cdn.discordapp.com/attachments/1204994105298526220/1210439637303173191/wonderful_indonesia.jpg?ex=65ea90c2&is=65d81bc2&hm=12cfe77b082d81a93e593039c062aa8d0ad5be04a4d0a798d610a5db81f6a372&",
     slug: "wae-rebo-village",
   },
   {
     name: "PADAR ISLAND",
     description:
-      "Speaking of nature, exotism and satisfaction, this island offers them all. Although you need a little bit of effort on the journey, the end result would be so much worth it. You wouldn’t regret the breathtaking view when you first arrive. As mentioned earlier, hiking to the peak of the hill lets you find out why it is called exotic.",
+      "Speaking of nature, exotism and satisfaction, this island offers them all. Although you need a little bit of effort on the journey, the end result would be so much worth it. You wouldn't regret the breathtaking view when you first arrive. As mentioned earlier, hiking to the peak of the hill lets you find out why it is called exotic.",
     imgURL: "https://cdn.discordapp.com/attachments/1204994105298526220/1210433945221595166/Fajruddin_Mudzakkir.jpg?ex=65ea8b75&is=65d81675&hm=02bbb76c378264fd72fc27270f799c498093f8244d5752c1d730ebce5cbb3d36&",
     slug: "padar-island",
   },

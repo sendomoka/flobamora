@@ -62,7 +62,7 @@ export function Hero() {
         <button
           className="relative px-4 py-2 mx-auto mt-4 text-center text-white border rounded-full backdrop-blur-sm bg-emerald-300/10 border-emerald-500/20 hover:bg-emerald-500/40 hover:border-emerald-500/40l"
           style={{ boxShadow: "2px 2px 5px rgba(0, 0, 0, 0.3)" }}>
-          <span>Explore now →</span>
+          <span>{t("Explore Now")} →</span>
           <div className="absolute inset-x-0 w-3/4 h-px mx-auto -bottom-px bg-gradient-to-r from-transparent via-emerald-500 to-transparent" />
         </button>
       </motion.div>

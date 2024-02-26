@@ -29,7 +29,7 @@ export default function Header() {
           <div class="lg:hidden">
             <MenuSheet />
           </div>
-          <div class="hidden lg:flex items-center">
+          <div class="hidden lg:flex items-center ml-32">
             <a href="/articles">
               <Button variant="link">{t("Articles")}</Button>
             </a>
