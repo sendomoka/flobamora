@@ -1,6 +1,7 @@
 import ArticleCard from "@/components/articles/ArticleCard";
 import { articles } from "@/data/articles";
 import { useTranslation } from "react-i18next";
+import "@fontsource/dela-gothic-one";
 
 export default function Articles() {
   const firstArticle = articles[0];
@@ -17,8 +18,12 @@ export default function Articles() {
         }}>
         <h1
           className={
-            "font-extrabold text-4xl md:text-6xl xl:text-7xl shadow-xl text-white"
-          }>
+            "font-extrabold text-3xl md:text-5xl xl:text-6xl shadow-xl text-white"
+          }
+          style={{
+            fontFamily: "Dela Gothic One",
+            textShadow: "5px 5px 0px rgba(0, 0, 0, 0.5)",
+          }}>
           {t("Read handpicked articles to get you inspired by East Nusa Tenggara")}
         </h1>
       </div>

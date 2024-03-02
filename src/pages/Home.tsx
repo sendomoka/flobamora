@@ -19,7 +19,7 @@ const Home = () => {
       <section>
         <GetToKnow />
       </section>
-      <section>
+      <section id="explore">
         <ExploreMore />
       </section>
     </div>

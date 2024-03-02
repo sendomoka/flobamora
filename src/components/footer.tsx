@@ -4,6 +4,8 @@ import logodark from "/svgs/logo-dark.svg";
 import logolight from "/svgs/logo-light.svg";
 import { WeatherType, getWeather } from "@/lib/getWeather";
 import { getUserTime } from "@/lib/getTime";
+import "@fontsource/dela-gothic-one";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
   const [weather, setWeather] = useState<WeatherType>();
@@ -30,6 +32,7 @@ export default function Footer() {
   }, []);
 
   const { theme } = useTheme();
+  const { t } = useTranslation();
   return (
     <div className={"container mt-10"}>
       <div
@@ -48,7 +51,11 @@ export default function Footer() {
           <div
             className={
               "flex flex-col w-full items-center justify-center text-4xl font-extrabold"
-            }>
+            }
+            style={{
+              fontFamily: "Dela Gothic One",
+              textShadow: "5px 5px 0px rgba(0, 0, 0, 0.5)",
+            }}>
             <div>{time}</div>
           </div>
           <div
@@ -61,13 +68,13 @@ export default function Footer() {
         <div className={"p-4 flex flex-col gap-3"}>
           <h4 className={"font-bold text-lg"}>Flobamora</h4>
           <div>
-            <div><a href="/" rel="noopener" className="hover:text-green-main transition-all">Home</a></div>
-            <div><a href="/articles" rel="noopener" className="hover:text-green-main transition-all">Articles</a></div>
-            <div><a href="/accomodations" rel="noopener" className="hover:text-green-main transition-all">Lodging & Accomodations</a></div>
+            <div><a href="/" rel="noopener" className="hover:text-green-main transition-all">{t("Home")}</a></div>
+            <div><a href="/articles" rel="noopener" className="hover:text-green-main transition-all">{t("Articles")}</a></div>
+            <div><a href="/accomodations" rel="noopener" className="hover:text-green-main transition-all">{t("Lodging & Accommodations")}</a></div>
           </div>
         </div>
         <div className={"p-4 flex flex-col gap-3"}>
-          <h4 className={"font-bold text-lg"}>Sumber Data</h4>
+          <h4 className={"font-bold text-lg"}>{t("Data Source")}</h4>
           <div>
             <div><a href="https://www.detik.com/" target="_blank" rel="noopener" className="hover:text-green-main transition-all">Detik.com</a></div>
             <div><a href="https://www.wikipedia.org/" target="_blank" rel="noopener" className="hover:text-green-main transition-all">Wikipedia</a></div>
@@ -78,7 +85,7 @@ export default function Footer() {
           </div>
         </div>
         <div className={"p-4 flex flex-col gap-3"}>
-          <h4 className={"font-bold text-lg"}>Tentang Kita</h4>
+          <h4 className={"font-bold text-lg"}>{t("About Us")}</h4>
           <div>
             <div><a href="https://www.instagram.com/jehianth/" target="_blank" rel="noopener" className="hover:text-green-main transition-all">Jehian Athaya Tsani Az Zuhry</a></div>
             <div><a href="https://www.instagram.com/dzakonee/" target="_blank" rel="noopener" className="hover:text-green-main transition-all">Dzakwan Irfan Ramdhani</a></div>

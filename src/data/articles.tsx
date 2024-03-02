@@ -208,6 +208,98 @@ const articles: article[] = [
     ],
     thumbnailCredit: "danaanandrew",
   },
+  {
+    title: "Chasing Sunrise in the Sky of Three Colored Lakes",
+    datePublished: "February 6, 2024",
+    imgURL:
+      "https://cdn.discordapp.com/attachments/1204994105298526220/1213412946789662741/commons.wikimedia.org.jpg?ex=65f561de&is=65e2ecde&hm=8db24f1856b3a2b82279548aaeab20642a87e32692ec90a4cd8e6e912377f595&",
+    slug: "chasing-sunrise-in-the-sky-of-three-colored-lakes",
+    articleMainDescription: [
+      "The Tale of Kelimutu's Three-Color Lake in Ende Regency, East Nusa Tenggara Province, Captivates Travelers from Abroad and Throughout the Archipelago, Including Locals on Flores Island.",
+      "The three colorful lakes on Mount Kelimutu are part of the Kelimutu National Park. Travelers often purchase travel packages to Flores Island with the goal of visiting Kelimutu's three-color lakes.",
+      "Even during the Eid holiday in 2023, tourists from East Manggarai Regency took advantage of the opportunity to explore Kelimutu Lake. They embarked on a sunrise hunt at the peak of Kelimutu Lake on Saturday, April 22, 2023. Travelers from East Manggarai, along with their family entourage, traveled a considerable distance from Borong City to the summit of Kelimutu Lake before sunrise.",
+      "Edy Lento, a local traveler from East Manggarai, shared with Kompas.com on Saturday, April 22, 2023, that he and his family enjoyed a vacation at the three-color lakes of Kelimutu.",
+    ],
+    thumbnailCredit: "commons.wikimedia.org",
+    source: "Kompas.com",
+    body: [
+      {
+        title: "The Charm of The Sunrise at Lake Kelimutu",
+        credit: "bloodydirtyboots.wordpress.com",
+        description: [
+          "Until now, he has been intrigued by various tales and stories of Kelimutu's three-color lake, which has gained worldwide renown.",
+          "Foreign and domestic tourists frequently visit the lake to witness the sunrise and marvel at the three uniquely colored lakes atop Mount Kelimutu.",
+          "\"Yesterday, on Friday, (April 21, 2023), we departed from East Manggarai and stayed overnight in Moni Village. Early this morning, around 04:00 AM local time, we traversed the hills to Lake Kelimutu, parking our vehicles at the hillside parking lot,\" he said.",
+          "Subsequently, they walked towards the summit of Mount Kelimutu, climbing stairs until reaching the peak.",
+          "Edy Lento described the journey to the Kelimutu peak as truly astonishing, with the natural beauty of the forested area and the unique landscape featuring three lakes at the mountain's summit.",
+          "\"This morning the weather was very clear, allowing us to capture the sunrise and experience the chilly weather at the top of Mount Kelimutu with its three exotic-colored lakes,\" he added.",
+          "They felt the marvels presented by the universe and the sun's rays at the summit of Mount Kelimutu.",
+          "Edy Lento added that upon reaching the peak of Mount Kelimutu at the location of the summit monument, they also encountered other tourists from abroad and different regions of Indonesia who were also capturing the sunrise at the summit of Mount Kelimutu.",
+          "\"Kelimutu's three-color lake is a globally renowned destination. Foreign and domestic tourists often purchase travel packages to Kelimutu Lake located in the Kelimutu Mountains,\" he explained.",
+          "As known, travel agencies and tour guides in Flores, Bali, and Jakarta have incorporated Kelimutu Lake as a favorite destination in Flores Island. From West Flores to East Flores and vice versa, they sell travel packages to Kelimutu Lake. This represents the natural and lake tourism heritage in Flores Island, East Nusa Tenggara.",
+        ],
+        imgURL:
+          "https://cdn.discordapp.com/attachments/1204994105298526220/1213412947410423819/bloodydirtyboots.wordpress.com.jpg?ex=65f561de&is=65e2ecde&hm=d3b181bbe34a585e5e7afb49515b7d62399ccdc5267d89fbfd0e46cb40b44713&",
+      },
+    ],
+  },
+  {
+    title: "Why is the sand of Pink Beach in NTT pink?",
+    datePublished: "February 5, 2024",
+    imgURL:
+      "https://cdn.discordapp.com/attachments/1204994105298526220/1213413126352015401/Agung_Adit.jpg?ex=65f56209&is=65e2ed09&hm=9708e0f8a18c4337a8dd64f414e6cdf5bbae2a0448cee9f3f231249bf1d84053&",
+    slug: "why-is-the-sand-of-pink-beach-in-ntt-pink",
+    articleMainDescription: [
+      "One of the must-visit attractions for tourists in Komodo National Park (KNP), West Manggarai Regency, Flores, East Nusa Tenggara, is the Pink Beach. Beyond offering views of the beautiful and crystal-clear blue sea, the stretch of pink-hued sand is the distinctive allure of Pink Beach.",
+      "Travel Blogger Kadek Arini explained that behind the captivating sand color lies the role of waves dragging coral reefs to the shore. \"The coral reefs at Pink Beach are mostly pink. When the waves hit them, they break. The fragments, mixed with white sand, result in the pink-colored sand,\" she stated during a virtual press conference on \"Comprehensive Protection of Affordable Spirit and Health\" on Monday, December 21, 2020.",
+      "According to information from Bobo on Monday, July 15, 2019, the beach's sand color on Komodo Island originates from microorganisms called foraminifera. Additionally, citing Kompas.com on Monday, September 14, 2020, foram or Foraminifera is a microscopic plankton that dates back nearly a billion years in the ocean.",
+      "So, what is the connection between plankton and the sand color at Pink Beach?",
+    ],
+    thumbnailCredit: "Agung Adit",
+    source: "Kompas.com",
+    body: [
+      {
+        imgURL:
+          "https://cdn.discordapp.com/attachments/1204994105298526220/1213413127123898378/Fiqih_Alfarish.jpg?ex=65f56209&is=65e2ed09&hm=162406bef1513bb9f3fd024fccf8cb35757d13001dc36ff5815c67f5a2c7a14c&",
+        credit: "Fiqih Alfarish",
+        description: [
+          "Foram has a slightly orange or coral hue, which then mixes with the beach sand. As a result, the sand at Pink Beach takes on a pinkish color.",
+          "Although foram is said to cause the sand to turn pink, as per Tribun Travel on Sunday, August 5, 2018, the sand color is influenced by shell fragments. These broken shell fragments are carried by the waves to the coastal areas. The shell fragments then mix with the white sand from the limestone rocks around the beach.",
+          "This process creates the distinctive color of Pink Beach, one of the seven pink sandy beaches globally, as seen by tourists today.",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Wae Rebo Village: Beautiful Indonesian Village",
+    datePublished: "February 4, 2024",
+    imgURL:
+      "https://cdn.discordapp.com/attachments/1204994105298526220/1213413271785312296/Aniq_Lubabul.jpg?ex=65f5622c&is=65e2ed2c&hm=15745efe97aea0032e8b28185e388c7f3752b5bccc5096254034a4374f0aa648&",
+    slug: "wae-rebo-village-beautiful-indonesian-village",
+    articleMainDescription: [
+      "Situated at an altitude of 1,200 meters above sea level, Wae Rebo Village in Flores resembles a paradise above the clouds. While reaching this destination requires effort, the reward upon arrival is truly equivalent to the journey taken. The breathtaking natural scenery, with mountains blending seamlessly with seven cone-shaped traditional houses, leaves a unique impression on every visitor who has ventured to Wae Rebo Village.",
+      "Located southwest of Ruteng city in the Manggarai Regency, East Nusa Tenggara, Wae Rebo Village is not easily accessible due to its mountaintop location. A considerable amount of extra energy is required for the approximately 3 to 4-hour trek, covering a distance of 7 km, depending on physical conditions.",
+      "I consider Wae Rebo Village the most beautiful village in Indonesia, and it's a place where mobile signals are entirely absent. In terms of tourism, Wae Rebo Village is well-managed, receiving guidance from the Indonesia Ecotourism Network. The aim is to uplift villages that were previously overlooked into sought-after tourist destinations.",
+      "Travelers heading to Wae Rebo Village in Flores usually start their journey from Ruteng. If coming from Denpasar (Bali), direct flights to Ruteng are available. In case there are no flights to Ruteng, buses or travel services from Labuan Bajo, the capital of West Manggarai Regency, which takes approximately 6 hours, can be utilized. Upon reaching Ruteng, the journey continues to the villages of Denge or Dintor, taking about 2 hours, and Denge is the last village accessible by vehicle.",
+    ],
+    thumbnailCredit: "Aniq Lubabul",
+    source: "Kompas.com",
+    body: [
+      {
+        imgURL:
+          "https://cdn.discordapp.com/attachments/1204994105298526220/1213413272145895434/Wirestock_Creators.jpg?ex=65f5622c&is=65e2ed2c&hm=5aadc30340dd22da1de67b26f41e78c5cb97a69244dabd81e112ac21f6c029fd&",
+        credit: "Wirestock Creators",
+        description: [
+          "To reach Denge, visitors can opt for motorcycle taxis (ojek) or wooden trucks, usually available at Terminal Mena operating from 09:00 to 10:00. For a more budget-friendly choice, the wooden trucks are recommended, though they don't operate every day.",
+          "The journey then continues on foot to Wae Rebo Village, taking approximately 4-5 hours. If choosing an ojek from Ruteng to Denge, the cost can be higher, ranging from Rp 150,000 to Rp 200,000 for a single trip. Opting for the wooden trucks is more economical, with a fare of only Rp 30,000 per person.",
+          "In terms of facilities, Denge Village has a home stay available for accommodation. Not far from the home stay, there is an information center and a library.",
+          "Upon arriving in Wae Rebo Village, visitors can stay in the traditional houses owned by the locals. There are no specific home stays or accommodations here, as the village consists of only 7 traditional houses.",
+          "In addition to its breathtaking scenery, the warmth of the villagers welcomes visitors upon arrival in Wae Rebo. Here, you'll find the iconic Mbaru Niang, a traditional architectural wonder made of wood with a thatched roof woven from cogon grass. The unique cone-shaped structures have stood for 19 generations, attracting curious tourists, especially from abroad.",
+          "Surrounded by lush greenery and beautiful hills, the seven Mbaru Niang structures create a picturesque landscape with a cool climate, surrounded by forests. Recognized as a UNESCO World Heritage cultural site in 2012, Wae Rebo Village is a historical and culturally significant destination.",
+        ],
+      },
+    ],
+  },
 ];
 
 export { articles };

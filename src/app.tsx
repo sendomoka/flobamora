@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import About from "./pages/About";
+import Accomodations from "./pages/Accomodations";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import Articles from "./pages/Articles";
@@ -12,7 +12,7 @@ export function App() {
       <Header />
       <Routes>
         <Route path="/" Component={Home} />
-        <Route path="/about" Component={About} />
+        <Route path="/accomodations" Component={Accomodations} />
         <Route path="/articles" Component={Articles} />
         <Route path={`/articles/:slug`} Component={ArticleTemplate} />
       </Routes>

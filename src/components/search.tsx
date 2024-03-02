@@ -2,12 +2,9 @@
 
 import * as React from "react"
 import {
-  CalendarIcon,
   EnvelopeClosedIcon,
-  FaceIcon,
   GearIcon,
   PersonIcon,
-  RocketIcon,
 } from "@radix-ui/react-icons"
 
 import {
@@ -20,6 +17,9 @@ import {
   CommandSeparator,
   CommandShortcut,
 } from "@/components/ui/command"
+import { useTranslation } from "react-i18next"
+import { accomodations } from "@/data/accomodations"
+import { articles } from "@/data/articles"
 
 interface SearchProps {
   open: boolean
@@ -40,7 +40,7 @@ export function Search({open, setOpen}: SearchProps) {
     document.addEventListener("keydown", down)
     return () => document.removeEventListener("keydown", down)
   }, [])
-
+  const { t } = useTranslation()
   return (
     <>
       <p className="hidden lg:inline text-sm text-muted-foreground">
@@ -50,52 +50,35 @@ export function Search({open, setOpen}: SearchProps) {
         </kbd>
       </p>
       <CommandDialog open={open} onOpenChange={() => setOpen((open) => !open)}>
-        <CommandInput placeholder="Type a command or search..." />
+        <CommandInput placeholder={t("What are you looking for...")} />
         <CommandList>
           <CommandEmpty>No results found.</CommandEmpty>
-          <CommandGroup heading="Suggestions">
-            <CommandItem>
-              <CalendarIcon 
-              // @ts-expect-error
-              className="mr-2 h-4 w-4" />
-              <span>Calendar</span>
-            </CommandItem>
-            <CommandItem>
-              <FaceIcon 
-              // @ts-expect-error
-              className="mr-2 h-4 w-4" />
-              <span>Search Emoji</span>
-            </CommandItem>
-            <CommandItem>
-              <RocketIcon 
-              // @ts-expect-error
-              className="mr-2 h-4 w-4" />
-              <span>Launch</span>
-            </CommandItem>
+          <CommandGroup heading={t("Articles")}>
+            {articles.map((value) => (
+              <a href={`/articles/${value.slug}`}>
+                <CommandItem>
+                <img
+                  src={value.imgURL}
+                  className="h-10 w-20 rounded-sm object-cover mr-6"
+                />
+                <span>{value.title}</span>
+              </CommandItem>
+              </a>
+            ))}
           </CommandGroup>
           <CommandSeparator />
-          <CommandGroup heading="Settings">
-            <CommandItem>
-              <PersonIcon 
-              // @ts-expect-error
-              className="mr-2 h-4 w-4" />
-              <span>Profile</span>
-              <CommandShortcut>⌘P</CommandShortcut>
-            </CommandItem>
-            <CommandItem>
-              <EnvelopeClosedIcon 
-              // @ts-expect-error
-              className="mr-2 h-4 w-4" />
-              <span>Mail</span>
-              <CommandShortcut>⌘B</CommandShortcut>
-            </CommandItem>
-            <CommandItem>
-              <GearIcon 
-              // @ts-expect-error
-              className="mr-2 h-4 w-4" />
-              <span>Settings</span>
-              <CommandShortcut>⌘S</CommandShortcut>
-            </CommandItem>
+          <CommandGroup heading={t("Lodging & Accommodations")}>
+          {accomodations.map((value) => (
+              <a href="/accomodations">
+                <CommandItem>
+                <img
+                  src={value.imgURL[0]}
+                  className="h-10 w-20 rounded-sm object-cover mr-6"
+                />
+                <span>{value.title}</span>
+              </CommandItem>
+              </a>
+            ))}
           </CommandGroup>
         </CommandList>
       </CommandDialog>
