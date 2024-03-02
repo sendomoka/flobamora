@@ -1,11 +1,6 @@
 "use client"
 
 import * as React from "react"
-import {
-  EnvelopeClosedIcon,
-  GearIcon,
-  PersonIcon,
-} from "@radix-ui/react-icons"
 
 import {
   CommandDialog,
@@ -15,7 +10,6 @@ import {
   CommandItem,
   CommandList,
   CommandSeparator,
-  CommandShortcut,
 } from "@/components/ui/command"
 import { useTranslation } from "react-i18next"
 import { accomodations } from "@/data/accomodations"
