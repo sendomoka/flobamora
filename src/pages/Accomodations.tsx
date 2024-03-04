@@ -8,7 +8,7 @@ const Accomodations = () => {
   return (
     <div class="flex flex-col w-full text-black dark:text-white mt-28 px-4 md:px-24">
       <h1
-        class="text-6xl font-extrabold uppercase text-emerald-600 mb-4"
+        class="text-2xl md:text-6xl font-extrabold uppercase text-emerald-600 mb-4"
         style={{
           fontFamily: "Dela Gothic One",
         }}>{t("Lodging & Accommodations")}</h1>
