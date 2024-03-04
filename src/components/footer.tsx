@@ -40,7 +40,7 @@ export default function Footer() {
         className={
           "grid md:grid-cols-4 md:grid-rows-none mb-10 text-center md:text-left"
         }>
-        <div className={"flex flex-col items-start gap-5 text-center"}>
+        <div className={"flex flex-col items-start text-center"}>
           <a href="/" class="flex items-center mx-auto">
             <img
               src={theme === "dark" ? logodark : logolight}
@@ -49,6 +49,7 @@ export default function Footer() {
             />
             <h3 class="uppercase text-2xl font-bold">flobamora</h3>
           </a>
+          <div class="mx-auto -translate-y-2 font-mono"><p class="opacity-50">{t("Last Year was visited by")}</p><p><b>{t("1.5 million")}</b><span class="opacity-50">{t(" tourists.")}</span></p></div>
           <div
             className={
               "flex flex-col w-full items-center justify-center text-4xl font-extrabold"
@@ -61,7 +62,7 @@ export default function Footer() {
           </div>
           <div
             className={
-              "flex flex-col w-full items-center justify-center text-2xl font-semibold"
+              "pt-2 flex flex-col w-full items-center justify-center text-2xl font-semibold"
             }>
             <div>☼ {weather ? weather.current.temp_c : "--"}°C</div>
           </div>
@@ -87,7 +88,7 @@ export default function Footer() {
         </div>
         <div className={"p-4 flex flex-col gap-3"}>
           <h4 className={"font-bold text-lg"}>{t("About Us")}</h4>
-          <div class="flex gap-2">
+          <div class="flex gap-2 mx-auto md:mx-0">
             <SocialIcon network="x" className="hover:grayscale hover:translate-y-1 transition-all duration-300 cursor-pointer" />
             <SocialIcon network="tiktok" className="hover:grayscale hover:translate-y-1 transition-all duration-300 cursor-pointer" />
             <SocialIcon network="instagram" className="hover:grayscale hover:translate-y-1 transition-all duration-300 cursor-pointer" />

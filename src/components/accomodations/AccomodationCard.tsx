@@ -37,7 +37,7 @@ export default function AccomodationCard({
                 <span>{t(address)}</span>
             </div>
             <p class="opacity-50 text-justify">{t(desc)}</p>
-            <div class="flex gap-20 my-1 p-4 w-full justify-center items-center bg-black/10 dark:bg-white/10"
+            <div class="flex flex-col gap-6 md:flex-row md:gap-20 my-1 p-4 w-full justify-center md:items-center bg-black/10 dark:bg-white/10"
             style={{
                 fontFamily: "Dela Gothic One"
               }}
