@@ -14,7 +14,7 @@ export default function Articles() {
           "min-h-[500px] bg-cover bg-center bg-no-repeat w-full flex flex-col justify-center items-center text-center gap-10 px-3"
         }
         style={{
-          backgroundImage: `url('https://cdn.discordapp.com/attachments/1204994105298526220/1210435561043525642/Deri_Nazaroni.jpg?ex=65ea8cf6&is=65d817f6&hm=3157b64b5cbc2862bd009e05b752fa241ee52236e33dfbae0f4d22d6f10b0af6&')`,
+          backgroundImage: `url('https://raw.githubusercontent.com/sendomoka/flobamora/7b5edfeb299d4746d08b4b1509117f88b799330a/public/images/Articles/5%20REASONS%20TO%20VISIT%20THE%20MAGNIFICENT%20KOMODO%20ISLAND/Deri%20Nazaroni.jpg')`,
         }}>
         <h1
           className={
@@ -37,7 +37,7 @@ export default function Articles() {
           {/* Featured */}
           <div className={"grid md:grid-cols-2 grid-flow-row gap-7 hover:translate-y-1 transition-transform duration-300"}>
             <img
-              src="https://cdn.discordapp.com/attachments/1204994105298526220/1210384816822812802/dok._Miles_Films___Humba_Dreams.jpeg?ex=65ea5db4&is=65d7e8b4&hm=e39a23a43833d51e4277063bbeeee78ec7ba321503eb0fbf1e0725ca3bebfddb&"
+              src="https://raw.githubusercontent.com/sendomoka/flobamora/7b5edfeb299d4746d08b4b1509117f88b799330a/public/images/Articles/5%20MOVIES%20SET%20IN%20BEAUTIFUL%20EAST%20NUSA%20TENGGARA/dok.%20Miles%20Films%20_%20Humba%20Dreams.jpeg"
               alt=""
               className={"object-cover rounded-lg"}
             />

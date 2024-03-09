@@ -8,7 +8,7 @@ export default function GetToKnow() {
       className={"w-full h-screen left-0 bg-cover bg-center"}
       style={{
         backgroundImage:
-          "url('https://cdn.discordapp.com/attachments/1204994105298526220/1210433947452842075/Wendy_Stevian.jpg?ex=65ea8b75&is=65d81675&hm=b186c410b24db5af3b523d583078d2dc114c8bd01cb1d744bf58d80067f09e71&')",
+          "url('https://raw.githubusercontent.com/sendomoka/flobamora/7b5edfeb299d4746d08b4b1509117f88b799330a/public/images/Padar%20Island/Wendy%20Stevian.jpg')",
       }}>
       <div
         className={

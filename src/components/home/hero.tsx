@@ -5,9 +5,9 @@ import "@fontsource/dela-gothic-one";
 
 export function Hero() {
   const images = [
-    "https://cdn.discordapp.com/attachments/1204994105298526220/1210433942033932330/Denissa_Devy.jpg?ex=65ea8b74&is=65d81674&hm=2b5968fdc5155614ff8d712c5781849ff4d656fcff4675c7e16ead7895675de7&",
-    "https://cdn.discordapp.com/attachments/1204994105298526220/1210433945221595166/Fajruddin_Mudzakkir.jpg?ex=65ea8b75&is=65d81675&hm=02bbb76c378264fd72fc27270f799c498093f8244d5752c1d730ebce5cbb3d36&",
-    "https://cdn.discordapp.com/attachments/1204994105298526220/1210435562822180984/Iqx_Azmi.jpg?ex=65ea8cf6&is=65d817f6&hm=1dab0f8c6cd5ff7d46fc9527d029cd570c3cf95aa6c99980c29b420487cc8b32&",
+    "https://raw.githubusercontent.com/sendomoka/flobamora/7b5edfeb299d4746d08b4b1509117f88b799330a/public/images/Padar%20Island/Denissa%20Devy.jpg",
+    "https://raw.githubusercontent.com/sendomoka/flobamora/7b5edfeb299d4746d08b4b1509117f88b799330a/public/images/Padar%20Island/Fajruddin%20Mudzakkir.jpg",
+    "https://raw.githubusercontent.com/sendomoka/flobamora/7b5edfeb299d4746d08b4b1509117f88b799330a/public/images/Komodo%20Island/Iqx%20Azmi.jpg",
   ];
   const { t } = useTranslation();
   const title = t("Explore the enchanting islands of NTT");

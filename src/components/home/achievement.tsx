@@ -57,28 +57,28 @@ export function Achievement() {
   const altEarth = t("earth-en");
   let srcEarth;
   if (altEarth === "earth-en") {
-    srcEarth = "https://cdn.discordapp.com/attachments/1204994105298526220/1210381673896878160/earth-en.png?ex=65ea5ac6&is=65d7e5c6&hm=cfddd07f71a45177132781c6ffbc38f619896d1144b3aa16c3bfcc995e06b802&"
+    srcEarth = "https://raw.githubusercontent.com/sendomoka/flobamora/7b5edfeb299d4746d08b4b1509117f88b799330a/public/images/achievement/earth-en.png"
   } else if (altEarth === "earth-id") {
-    srcEarth = "https://cdn.discordapp.com/attachments/1204994105298526220/1210381674508984371/earth-id.png?ex=65ea5ac7&is=65d7e5c7&hm=850b75be8d32adbebeb326d49e643a1867359d730265177ebeda30d7e891f081&"
+    srcEarth = "https://raw.githubusercontent.com/sendomoka/flobamora/7b5edfeb299d4746d08b4b1509117f88b799330a/public/images/achievement/earth-id.png"
   }
   const altWave = t("wave-en");
   let srcWave;
   if (altWave === "wave-en") {
-    srcWave = "https://cdn.discordapp.com/attachments/1204994105298526220/1210381672466616330/wave-en.png?ex=65ea5ac6&is=65d7e5c6&hm=97c9858e9293814d4b3d1a658fe8329ac64453ea5edd0a7798d0bb6e6c042653&"
+    srcWave = "https://raw.githubusercontent.com/sendomoka/flobamora/7b5edfeb299d4746d08b4b1509117f88b799330a/public/images/achievement/wave-en.png"
   } else if (altWave === "wave-id") {
-    srcWave = "https://cdn.discordapp.com/attachments/1204994105298526220/1210381672990769202/wave-id.png?ex=65ea5ac6&is=65d7e5c6&hm=66afe3f26cc808d484bfb2e1b876add35aa5b513f7051dd3f13242330cc4ff5d&"
+    srcWave = "https://raw.githubusercontent.com/sendomoka/flobamora/7b5edfeb299d4746d08b4b1509117f88b799330a/public/images/achievement/wave-id.png"
   }
   const altLeaf = t("leaf-en");
   let srcLeaf;
   if (altLeaf === "leaf-en") {
-    srcLeaf = "https://cdn.discordapp.com/attachments/1204994105298526220/1210381671472304168/leaf-en.png?ex=65ea5ac6&is=65d7e5c6&hm=234e40f6f289e29f718a119ab8c6020a38300ab71a06d68f06be0da92e63873e&"
+    srcLeaf = "https://raw.githubusercontent.com/sendomoka/flobamora/7b5edfeb299d4746d08b4b1509117f88b799330a/public/images/achievement/leaf-en.png"
   } else if (altLeaf === "leaf-id") {
-    srcLeaf = "https://cdn.discordapp.com/attachments/1204994105298526220/1210381672017821696/leaf-id.png?ex=65ea5ac6&is=65d7e5c6&hm=65319c297d3842a45566c3767683207c344c2890c9777da336fea26c15ecba7f&"
+    srcLeaf = "https://raw.githubusercontent.com/sendomoka/flobamora/7b5edfeb299d4746d08b4b1509117f88b799330a/public/images/achievement/leaf-id.png"
   }
   return (
     <div class="h-screen flex flex-col lg:flex-row justify-center items-center mt-96 md:mt-[30rem] lg:mt-10">
       <div class="lg:w-1/2 flex justify-end lg:-translate-x-10 xl:-translate-x-32 scale-75 md:scale-100 lg:scale-75 xl:scale-100">
-        <img src="https://cdn.discordapp.com/attachments/1204994105298526220/1210381671032037376/komodo.png?ex=65ea5ac6&is=65d7e5c6&hm=7d18c9588c8f1cbbc95c42e8ea50191d9ba3f9c172f9a53c360b6936ad09b11b&" alt="komodo" class="w-[30rem] h-fit z-0" />
+        <img src="https://raw.githubusercontent.com/sendomoka/flobamora/7b5edfeb299d4746d08b4b1509117f88b799330a/public/images/achievement/komodo.png" alt="komodo" class="w-[30rem] h-fit z-0" />
         <motion.div
           style={{
             position: "absolute",
